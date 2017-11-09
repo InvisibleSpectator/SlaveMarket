@@ -10676,7 +10676,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "(from UseCases)",
+											"text": "(from useCases)",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -11834,37 +11834,37 @@
 							"isAbstract": false,
 							"isFinalSpecialization": false,
 							"isLeaf": false
+						},
+						{
+							"_type": "UMLUseCase",
+							"_id": "AAAAAAFfooqlOUv19GE=",
+							"_parent": {
+								"$ref": "AAAAAAFfnT4YAoEQfBQ="
+							},
+							"name": "Set productivity",
+							"ownedElements": [
+								{
+									"_type": "UMLExtend",
+									"_id": "AAAAAAFfoormLU0yhfM=",
+									"_parent": {
+										"$ref": "AAAAAAFfooqlOUv19GE="
+									},
+									"source": {
+										"$ref": "AAAAAAFfooqlOUv19GE="
+									},
+									"target": {
+										"$ref": "AAAAAAFfnVSftbSCWAo="
+									},
+									"visibility": "public"
+								}
+							],
+							"visibility": "public",
+							"isAbstract": false,
+							"isFinalSpecialization": false,
+							"isLeaf": false
 						}
 					],
 					"visibility": "public"
-				},
-				{
-					"_type": "UMLUseCase",
-					"_id": "AAAAAAFfooqlOUv19GE=",
-					"_parent": {
-						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
-					},
-					"name": "Set productivity",
-					"ownedElements": [
-						{
-							"_type": "UMLExtend",
-							"_id": "AAAAAAFfoormLU0yhfM=",
-							"_parent": {
-								"$ref": "AAAAAAFfooqlOUv19GE="
-							},
-							"source": {
-								"$ref": "AAAAAAFfooqlOUv19GE="
-							},
-							"target": {
-								"$ref": "AAAAAAFfnVSftbSCWAo="
-							},
-							"visibility": "public"
-						}
-					],
-					"visibility": "public",
-					"isAbstract": false,
-					"isFinalSpecialization": false,
-					"isLeaf": false
 				}
 			],
 			"visibility": "public"
@@ -11909,6 +11909,7 @@
 												"$ref": "AAAAAAFfnWmt5RwH/4I="
 											},
 											"name": "addObserver",
+											"documentation": "Add observer in collection or db",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -11956,6 +11957,7 @@
 												"$ref": "AAAAAAFfnWmt5RwH/4I="
 											},
 											"name": "notifyAllObservers",
+											"documentation": "Triggers all available observers to do something",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -12084,6 +12086,7 @@
 											"isDerived": false
 										}
 									],
+									"documentation": "Provides interface to manage slaves",
 									"visibility": "public",
 									"operations": [
 										{
@@ -12093,6 +12096,7 @@
 												"$ref": "AAAAAAFfnYCSbR1HpvY="
 											},
 											"name": "addSlave",
+											"documentation": "Adding slave in database or something like that",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -12119,6 +12123,7 @@
 														"$ref": "AAAAAAFfnYDf1x1xw0U="
 													},
 													"name": "slave",
+													"documentation": "Slave to add",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -12142,6 +12147,7 @@
 												"$ref": "AAAAAAFfnYCSbR1HpvY="
 											},
 											"name": "addSlave",
+											"documentation": "Do the same thing like \n@code{addSlave(Slave slave)}",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -12237,6 +12243,7 @@
 												"$ref": "AAAAAAFfnYCSbR1HpvY="
 											},
 											"name": "removeSlave",
+											"documentation": "removes slave out our collection",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -12286,6 +12293,7 @@
 												"$ref": "AAAAAAFfnYCSbR1HpvY="
 											},
 											"name": "removeSlave",
+											"documentation": "removes slave out our collection using only unique id",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -12333,6 +12341,7 @@
 												"$ref": "AAAAAAFfnYCSbR1HpvY="
 											},
 											"name": "searchSlave",
+											"documentation": "Search slave by the string  query\nlike \"height>150 productivity>40 weight<90 age=22\"",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -12359,12 +12368,11 @@
 													"_parent": {
 														"$ref": "AAAAAAFfoRg2RbFzZNo="
 													},
+													"documentation": "list of founed slaves",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
-													"type": {
-														"$ref": "AAAAAAFfnW3dqRw+/js="
-													},
+													"type": "List<Slave>",
 													"isReadOnly": false,
 													"isOrdered": false,
 													"isUnique": false,
@@ -12446,7 +12454,7 @@
 												"$ref": "AAAAAAFfnW3dqRw+/js="
 											},
 											"name": "height",
-											"documentation": "Standart human height",
+											"documentation": "Human height or stature is the distance from the bottom of the feet to the top of the head in a human body, standing erect.",
 											"visibility": "private",
 											"isStatic": false,
 											"isLeaf": false,
@@ -12465,6 +12473,7 @@
 												"$ref": "AAAAAAFfnW3dqRw+/js="
 											},
 											"name": "weight",
+											"documentation": "The term human body weight is used colloquially and in the biological and medical sciences to refer to a person's mass or weight.",
 											"visibility": "private",
 											"isStatic": false,
 											"isLeaf": false,
@@ -12483,6 +12492,7 @@
 												"$ref": "AAAAAAFfnW3dqRw+/js="
 											},
 											"name": "age",
+											"documentation": "The mesuare to calculate human ageing.\nWhere the Ageing or aging (see spelling differences) is the process of becoming older.",
 											"visibility": "private",
 											"isStatic": false,
 											"isLeaf": false,
@@ -12501,6 +12511,7 @@
 												"$ref": "AAAAAAFfnW3dqRw+/js="
 											},
 											"name": "id",
+											"documentation": " An identifier is a name that identifies (that is, labels the identity of) either a unique slave.",
 											"visibility": "private",
 											"isStatic": false,
 											"isLeaf": false,
@@ -12519,6 +12530,7 @@
 												"$ref": "AAAAAAFfnW3dqRw+/js="
 											},
 											"name": "isMale",
+											"documentation": "Gender is the range of characteristics pertaining to, and differentiating between, masculinity and femininity. if isMale is true true  slave is a male, or else she's a female. ",
 											"visibility": "private",
 											"isStatic": false,
 											"isLeaf": false,
@@ -12537,6 +12549,7 @@
 												"$ref": "AAAAAAFfnW3dqRw+/js="
 											},
 											"name": "productivity",
+											"documentation": "Productivity describes various measures of the efficiency of production. A productivity measure is expressed as the ratio of output to inputs used in a production process.",
 											"visibility": "private",
 											"isStatic": false,
 											"isLeaf": false,
@@ -12818,6 +12831,7 @@
 													"_parent": {
 														"$ref": "AAAAAAFforrtgGpyO/c="
 													},
+													"documentation": "slave's height",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -12849,6 +12863,7 @@
 													"_parent": {
 														"$ref": "AAAAAAFforsAsGrVTXc="
 													},
+													"documentation": "slave's weight",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -12881,6 +12896,7 @@
 														"$ref": "AAAAAAFforsAsGrXu0I="
 													},
 													"name": "value",
+													"documentation": "slave's weight",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -12912,6 +12928,7 @@
 													"_parent": {
 														"$ref": "AAAAAAFforsRfGtQKU8="
 													},
+													"documentation": "slave's age",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -12943,6 +12960,7 @@
 													"_parent": {
 														"$ref": "AAAAAAFforsacmuzr4g="
 													},
+													"documentation": "slave's id",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -12974,6 +12992,7 @@
 													"_parent": {
 														"$ref": "AAAAAAFforskD2wWPkc="
 													},
+													"documentation": "slave's masculinity",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -13005,6 +13024,7 @@
 													"_parent": {
 														"$ref": "AAAAAAFforsvjGx5BMU="
 													},
+													"documentation": "slave's productivity",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -13037,6 +13057,7 @@
 														"$ref": "AAAAAAFforsvjGx7jgU="
 													},
 													"name": "value",
+													"documentation": "slave's productivity",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -13058,6 +13079,7 @@
 												"$ref": "AAAAAAFfnW3dqRw+/js="
 											},
 											"name": "calculateProductivity",
+											"documentation": "Calculates productivity with ",
 											"visibility": "private",
 											"isStatic": false,
 											"isLeaf": false,
@@ -13068,6 +13090,7 @@
 													"_parent": {
 														"$ref": "AAAAAAFfosH/ens31KE="
 													},
+													"documentation": "slave's productivity",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -13107,26 +13130,6 @@
 									},
 									"name": "Controller",
 									"visibility": "public",
-									"attributes": [
-										{
-											"_type": "UMLAttribute",
-											"_id": "AAAAAAFfoRyz87XeVZ0=",
-											"_parent": {
-												"$ref": "AAAAAAFfoRxcSLWLzZA="
-											},
-											"name": "model",
-											"visibility": "private",
-											"isStatic": false,
-											"isLeaf": false,
-											"type": "Model",
-											"isReadOnly": false,
-											"isOrdered": false,
-											"isUnique": false,
-											"isDerived": false,
-											"aggregation": "none",
-											"isID": false
-										}
-									],
 									"operations": [
 										{
 											"_type": "UMLOperation",
@@ -13135,6 +13138,7 @@
 												"$ref": "AAAAAAFfoRxcSLWLzZA="
 											},
 											"name": "addSlave",
+											"documentation": "Add slave in model ",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -13146,6 +13150,7 @@
 														"$ref": "AAAAAAFfoR1X7bZcVUM="
 													},
 													"name": "slave",
+													"documentation": "Slave to add",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -13184,6 +13189,7 @@
 												"$ref": "AAAAAAFfoRxcSLWLzZA="
 											},
 											"name": "addSlave",
+											"documentation": "Add slave in model",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -13195,6 +13201,7 @@
 														"$ref": "AAAAAAFfoR4Ug7cnXI8="
 													},
 													"name": "height",
+													"documentation": "slaves' height ",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -13211,6 +13218,7 @@
 														"$ref": "AAAAAAFfoR4Ug7cnXI8="
 													},
 													"name": "weight",
+													"documentation": "slaves' weight ",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -13227,6 +13235,7 @@
 														"$ref": "AAAAAAFfoR4Ug7cnXI8="
 													},
 													"name": "age",
+													"documentation": "slaves' age",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -13243,6 +13252,7 @@
 														"$ref": "AAAAAAFfoR4Ug7cnXI8="
 													},
 													"name": "isMale",
+													"documentation": "slaves' masculinity ",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -13279,6 +13289,7 @@
 												"$ref": "AAAAAAFfoRxcSLWLzZA="
 											},
 											"name": "removeSlave",
+											"documentation": "tells to model for remove the slave",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -13290,6 +13301,7 @@
 														"$ref": "AAAAAAFfoR5R/bfHZ2E="
 													},
 													"name": "slave",
+													"documentation": "slave to remove",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -13328,6 +13340,7 @@
 												"$ref": "AAAAAAFfoRxcSLWLzZA="
 											},
 											"name": "removeSlave",
+											"documentation": "tells to model for remove the slave by id",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -13339,6 +13352,7 @@
 														"$ref": "AAAAAAFfoR52ZLgslgY="
 													},
 													"name": "id",
+													"documentation": "slaves's id to remove the slave by it.",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -13375,6 +13389,7 @@
 												"$ref": "AAAAAAFfoRxcSLWLzZA="
 											},
 											"name": "searchSlave",
+											"documentation": "tells to model for search  the slave by the query",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -13386,6 +13401,7 @@
 														"$ref": "AAAAAAFfoR6bvriXRgs="
 													},
 													"name": "querry",
+													"documentation": "querry for search",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -13401,12 +13417,11 @@
 													"_parent": {
 														"$ref": "AAAAAAFfoR6bvriXRgs="
 													},
+													"documentation": "list of founded slaves",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
-													"type": {
-														"$ref": "AAAAAAFfnW3dqRw+/js="
-													},
+													"type": "List<Slave>",
 													"isReadOnly": false,
 													"isOrdered": false,
 													"isUnique": false,
@@ -13454,6 +13469,7 @@
 												"$ref": "AAAAAAFfoSF9XbslK+8="
 											},
 											"name": "SlaveController",
+											"documentation": "Initial constructor with model",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -13465,6 +13481,7 @@
 														"$ref": "AAAAAAFfoiyZPvJrw14="
 													},
 													"name": "model",
+													"documentation": "model to manage.",
 													"visibility": "public",
 													"isStatic": false,
 													"isLeaf": false,
@@ -13564,6 +13581,7 @@
 												"$ref": "AAAAAAFfoR/+z7lEZ2g="
 											},
 											"name": "update",
+											"documentation": "Action performed after the trigger",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -13658,6 +13676,7 @@
 												"$ref": "AAAAAAFfoSTS3sEU4hQ="
 											},
 											"name": "launch",
+											"documentation": "Launch the view or CLI ",
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
@@ -15995,7 +16014,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+searchSlave(querry: String): Slave",
+											"text": "+searchSlave(querry: String): List<Slave>",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -16171,7 +16190,7 @@
 											"containerChangeable": false,
 											"containerExtending": false,
 											"left": 1149,
-											"top": 630,
+											"top": 643,
 											"width": 511,
 											"height": 13,
 											"autoResize": false,
@@ -16243,7 +16262,7 @@
 									"containerChangeable": false,
 									"containerExtending": false,
 									"left": 1144,
-									"top": 623,
+									"top": 636,
 									"width": 521,
 									"height": 25,
 									"autoResize": false,
@@ -16269,37 +16288,6 @@
 									"model": {
 										"$ref": "AAAAAAFfoRxcSLWLzZA="
 									},
-									"subViews": [
-										{
-											"_type": "UMLAttributeView",
-											"_id": "AAAAAAFfoRy0HrXk9o0=",
-											"_parent": {
-												"$ref": "AAAAAAFfoRxcSrWTmxE="
-											},
-											"model": {
-												"$ref": "AAAAAAFfoRyz87XeVZ0="
-											},
-											"visible": true,
-											"enabled": true,
-											"lineColor": "#000000",
-											"fillColor": "#ffffff",
-											"fontColor": "#000000",
-											"font": "Arial;13;0",
-											"showShadow": true,
-											"containerChangeable": false,
-											"containerExtending": false,
-											"left": 1149,
-											"top": 653,
-											"width": 511,
-											"height": 13,
-											"autoResize": false,
-											"underline": false,
-											"text": "-model: Model",
-											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
-										}
-									],
 									"visible": true,
 									"enabled": true,
 									"lineColor": "#000000",
@@ -16310,9 +16298,9 @@
 									"containerChangeable": false,
 									"containerExtending": false,
 									"left": 1144,
-									"top": 648,
+									"top": 661,
 									"width": 521,
-									"height": 23,
+									"height": 10,
 									"autoResize": false
 								},
 								{
@@ -16465,7 +16453,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+searchSlave(querry: String): Slave",
+											"text": "+searchSlave(querry: String): List<Slave>",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -17030,7 +17018,7 @@
 								"$ref": "AAAAAAFfoSF9XbsnvoA="
 							},
 							"lineStyle": 1,
-							"points": "1399:369;1403.0833333333333:600",
+							"points": "1399:369;1403.0526315789473:600",
 							"stereotypeDisplay": "label",
 							"showVisibility": true,
 							"showProperty": true,
@@ -18573,7 +18561,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 448,
+											"left": 720,
 											"top": 256,
 											"width": 0,
 											"height": 13,
@@ -18598,7 +18586,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 301,
+											"left": 437,
 											"top": 847,
 											"width": 141,
 											"height": 13,
@@ -18624,7 +18612,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 448,
+											"left": 720,
 											"top": 256,
 											"width": 79,
 											"height": 13,
@@ -18650,7 +18638,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 448,
+											"left": 720,
 											"top": 256,
 											"width": 0,
 											"height": 13,
@@ -18670,7 +18658,7 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 296,
+									"left": 432,
 									"top": 840,
 									"width": 151,
 									"height": 25,
@@ -18706,7 +18694,7 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 296,
+									"left": 432,
 									"top": 865,
 									"width": 151,
 									"height": 10,
@@ -18740,7 +18728,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 301,
+											"left": 437,
 											"top": 880,
 											"width": 141,
 											"height": 13,
@@ -18761,7 +18749,7 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 296,
+									"left": 432,
 									"top": 875,
 									"width": 151,
 									"height": 23,
@@ -18785,7 +18773,7 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 224,
+									"left": 360,
 									"top": 128,
 									"width": 10,
 									"height": 10,
@@ -18809,7 +18797,7 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 224,
+									"left": 360,
 									"top": 128,
 									"width": 10,
 									"height": 10,
@@ -18825,7 +18813,7 @@
 							"showShadow": true,
 							"containerChangeable": true,
 							"containerExtending": false,
-							"left": 296,
+							"left": 432,
 							"top": 840,
 							"width": 151,
 							"height": 58,
