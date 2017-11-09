@@ -11878,1895 +11878,6 @@
 			"name": "Model",
 			"ownedElements": [
 				{
-					"_type": "UMLPackage",
-					"_id": "AAAAAAFfnYjA1B32cU4=",
-					"_parent": {
-						"$ref": "AAAAAAFfoi/nwfX2QIo="
-					},
-					"name": "classes",
-					"ownedElements": [
-						{
-							"_type": "UMLPackage",
-							"_id": "AAAAAAFfnWiwlRvpgzI=",
-							"_parent": {
-								"$ref": "AAAAAAFfnYjA1B32cU4="
-							},
-							"name": "Model",
-							"ownedElements": [
-								{
-									"_type": "UMLInterface",
-									"_id": "AAAAAAFfnWmt5RwH/4I=",
-									"_parent": {
-										"$ref": "AAAAAAFfnWiwlRvpgzI="
-									},
-									"name": "Observable",
-									"visibility": "public",
-									"operations": [
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfnXcH/ByyvTs=",
-											"_parent": {
-												"$ref": "AAAAAAFfnWmt5RwH/4I="
-											},
-											"name": "addObserver",
-											"documentation": "Add observer in collection or db",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfnX1aRxzO6EU=",
-													"_parent": {
-														"$ref": "AAAAAAFfnXcH/ByyvTs="
-													},
-													"name": "observer",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Observer",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfnX7A+BzcvpI=",
-													"_parent": {
-														"$ref": "AAAAAAFfnXcH/ByyvTs="
-													},
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfnX3ZVhzRKWw=",
-											"_parent": {
-												"$ref": "AAAAAAFfnWmt5RwH/4I="
-											},
-											"name": "notifyAllObservers",
-											"documentation": "Triggers all available observers to do something",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfnX5piBzZ73c=",
-													"_parent": {
-														"$ref": "AAAAAAFfnX3ZVhzRKWw="
-													},
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										}
-									],
-									"isAbstract": false,
-									"isFinalSpecialization": false,
-									"isLeaf": false
-								},
-								{
-									"_type": "UMLClass",
-									"_id": "AAAAAAFfnYa3LB3CgK0=",
-									"_parent": {
-										"$ref": "AAAAAAFfnWiwlRvpgzI="
-									},
-									"name": "SlaveMarketModel",
-									"ownedElements": [
-										{
-											"_type": "UMLInterfaceRealization",
-											"_id": "AAAAAAFfnYpwzR5aGq4=",
-											"_parent": {
-												"$ref": "AAAAAAFfnYa3LB3CgK0="
-											},
-											"source": {
-												"$ref": "AAAAAAFfnYa3LB3CgK0="
-											},
-											"target": {
-												"$ref": "AAAAAAFfnWmt5RwH/4I="
-											},
-											"visibility": "public"
-										},
-										{
-											"_type": "UMLInterfaceRealization",
-											"_id": "AAAAAAFfnYqSAR5ra/g=",
-											"_parent": {
-												"$ref": "AAAAAAFfnYa3LB3CgK0="
-											},
-											"source": {
-												"$ref": "AAAAAAFfnYa3LB3CgK0="
-											},
-											"target": {
-												"$ref": "AAAAAAFfnYCSbR1HpvY="
-											},
-											"visibility": "public"
-										}
-									],
-									"visibility": "public",
-									"isAbstract": false,
-									"isFinalSpecialization": false,
-									"isLeaf": false,
-									"isActive": false
-								},
-								{
-									"_type": "UMLInterface",
-									"_id": "AAAAAAFfnYCSbR1HpvY=",
-									"_parent": {
-										"$ref": "AAAAAAFfnWiwlRvpgzI="
-									},
-									"name": "Model",
-									"ownedElements": [
-										{
-											"_type": "UMLAssociation",
-											"_id": "AAAAAAFfoSNKeb3A3lw=",
-											"_parent": {
-												"$ref": "AAAAAAFfnYCSbR1HpvY="
-											},
-											"end1": {
-												"_type": "UMLAssociationEnd",
-												"_id": "AAAAAAFfoSNKeb3BTho=",
-												"_parent": {
-													"$ref": "AAAAAAFfoSNKeb3A3lw="
-												},
-												"name": "model",
-												"reference": {
-													"$ref": "AAAAAAFfnYCSbR1HpvY="
-												},
-												"visibility": "private",
-												"navigable": true,
-												"aggregation": "none",
-												"multiplicity": "1",
-												"isReadOnly": false,
-												"isOrdered": false,
-												"isUnique": false,
-												"isDerived": false,
-												"isID": false
-											},
-											"end2": {
-												"_type": "UMLAssociationEnd",
-												"_id": "AAAAAAFfoSNKeb3CllE=",
-												"_parent": {
-													"$ref": "AAAAAAFfoSNKeb3A3lw="
-												},
-												"reference": {
-													"$ref": "AAAAAAFfoSF9XbslK+8="
-												},
-												"visibility": "public",
-												"navigable": true,
-												"aggregation": "none",
-												"isReadOnly": false,
-												"isOrdered": false,
-												"isUnique": false,
-												"isDerived": false,
-												"isID": false
-											},
-											"visibility": "private",
-											"isDerived": false
-										}
-									],
-									"documentation": "Provides interface to manage slaves",
-									"visibility": "public",
-									"operations": [
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfnYDf1x1xw0U=",
-											"_parent": {
-												"$ref": "AAAAAAFfnYCSbR1HpvY="
-											},
-											"name": "addSlave",
-											"documentation": "Adding slave in database or something like that",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfnYKGoh2ImC4=",
-													"_parent": {
-														"$ref": "AAAAAAFfnYDf1x1xw0U="
-													},
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfnYLwsh2Oaec=",
-													"_parent": {
-														"$ref": "AAAAAAFfnYDf1x1xw0U="
-													},
-													"name": "slave",
-													"documentation": "Slave to add",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": {
-														"$ref": "AAAAAAFfnW3dqRw+/js="
-													},
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfnYMxgh2R5p4=",
-											"_parent": {
-												"$ref": "AAAAAAFfnYCSbR1HpvY="
-											},
-											"name": "addSlave",
-											"documentation": "Do the same thing like \n@code{addSlave(Slave slave)}",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfnYPxyR2YQxQ=",
-													"_parent": {
-														"$ref": "AAAAAAFfnYMxgh2R5p4="
-													},
-													"name": "height",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Double",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfnYPxyh2Zi2Q=",
-													"_parent": {
-														"$ref": "AAAAAAFfnYMxgh2R5p4="
-													},
-													"name": "weight",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Double",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfnYPxyx2a6hI=",
-													"_parent": {
-														"$ref": "AAAAAAFfnYMxgh2R5p4="
-													},
-													"name": "age",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "int",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfnYPxyx2bG94=",
-													"_parent": {
-														"$ref": "AAAAAAFfnYMxgh2R5p4="
-													},
-													"name": "isMale",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "boolean",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfnYPxyx2cjD4=",
-													"_parent": {
-														"$ref": "AAAAAAFfnYMxgh2R5p4="
-													},
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfnYGe6R18U5M=",
-											"_parent": {
-												"$ref": "AAAAAAFfnYCSbR1HpvY="
-											},
-											"name": "removeSlave",
-											"documentation": "removes slave out our collection",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfnYI3/R2DNmg=",
-													"_parent": {
-														"$ref": "AAAAAAFfnYGe6R18U5M="
-													},
-													"name": "slave",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": {
-														"$ref": "AAAAAAFfnW3dqRw+/js="
-													},
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfnYI3/R2Exws=",
-													"_parent": {
-														"$ref": "AAAAAAFfnYGe6R18U5M="
-													},
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfnYRJlh2l9P8=",
-											"_parent": {
-												"$ref": "AAAAAAFfnYCSbR1HpvY="
-											},
-											"name": "removeSlave",
-											"documentation": "removes slave out our collection using only unique id",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfnYR/KB2si6s=",
-													"_parent": {
-														"$ref": "AAAAAAFfnYRJlh2l9P8="
-													},
-													"name": "id",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "int",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfnYR/KB2t8qA=",
-													"_parent": {
-														"$ref": "AAAAAAFfnYRJlh2l9P8="
-													},
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfoRg2RbFzZNo=",
-											"_parent": {
-												"$ref": "AAAAAAFfnYCSbR1HpvY="
-											},
-											"name": "searchSlave",
-											"documentation": "Search slave by the string  query\nlike \"height>150 productivity>40 weight<90 age=22\"",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoRiczLGDQtw=",
-													"_parent": {
-														"$ref": "AAAAAAFfoRg2RbFzZNo="
-													},
-													"name": "querry",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "String",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoRiczbGEll4=",
-													"_parent": {
-														"$ref": "AAAAAAFfoRg2RbFzZNo="
-													},
-													"documentation": "list of founed slaves",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "List<Slave>",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										}
-									],
-									"isAbstract": false,
-									"isFinalSpecialization": false,
-									"isLeaf": false
-								},
-								{
-									"_type": "UMLClass",
-									"_id": "AAAAAAFfnW3dqRw+/js=",
-									"_parent": {
-										"$ref": "AAAAAAFfnWiwlRvpgzI="
-									},
-									"name": "Slave",
-									"ownedElements": [
-										{
-											"_type": "UMLAssociation",
-											"_id": "AAAAAAFfnZWkhh+roqs=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"end1": {
-												"_type": "UMLAssociationEnd",
-												"_id": "AAAAAAFfnZWkhh+s+Fg=",
-												"_parent": {
-													"$ref": "AAAAAAFfnZWkhh+roqs="
-												},
-												"name": "slaves",
-												"reference": {
-													"$ref": "AAAAAAFfnW3dqRw+/js="
-												},
-												"visibility": "private",
-												"navigable": true,
-												"aggregation": "none",
-												"multiplicity": "0..*",
-												"isReadOnly": false,
-												"isOrdered": true,
-												"isUnique": false,
-												"isDerived": false,
-												"isID": false
-											},
-											"end2": {
-												"_type": "UMLAssociationEnd",
-												"_id": "AAAAAAFfnZWkhh+tlXs=",
-												"_parent": {
-													"$ref": "AAAAAAFfnZWkhh+roqs="
-												},
-												"reference": {
-													"$ref": "AAAAAAFfnYa3LB3CgK0="
-												},
-												"visibility": "public",
-												"navigable": true,
-												"aggregation": "composite",
-												"isReadOnly": false,
-												"isOrdered": false,
-												"isUnique": false,
-												"isDerived": false,
-												"isID": false
-											},
-											"stereotype": "",
-											"visibility": "private",
-											"isDerived": false
-										}
-									],
-									"visibility": "public",
-									"attributes": [
-										{
-											"_type": "UMLAttribute",
-											"_id": "AAAAAAFfnW866ByFDdI=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "height",
-											"documentation": "Human height or stature is the distance from the bottom of the feet to the top of the head in a human body, standing erect.",
-											"visibility": "private",
-											"isStatic": false,
-											"isLeaf": false,
-											"type": "Double",
-											"isReadOnly": false,
-											"isOrdered": false,
-											"isUnique": false,
-											"isDerived": false,
-											"aggregation": "none",
-											"isID": false
-										},
-										{
-											"_type": "UMLAttribute",
-											"_id": "AAAAAAFfnXA4/hyQ32U=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "weight",
-											"documentation": "The term human body weight is used colloquially and in the biological and medical sciences to refer to a person's mass or weight.",
-											"visibility": "private",
-											"isStatic": false,
-											"isLeaf": false,
-											"type": "Double",
-											"isReadOnly": false,
-											"isOrdered": false,
-											"isUnique": false,
-											"isDerived": false,
-											"aggregation": "none",
-											"isID": false
-										},
-										{
-											"_type": "UMLAttribute",
-											"_id": "AAAAAAFfnXCA6ByXYX8=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "age",
-											"documentation": "The mesuare to calculate human ageing.\nWhere the Ageing or aging (see spelling differences) is the process of becoming older.",
-											"visibility": "private",
-											"isStatic": false,
-											"isLeaf": false,
-											"type": "int",
-											"isReadOnly": false,
-											"isOrdered": false,
-											"isUnique": false,
-											"isDerived": false,
-											"aggregation": "none",
-											"isID": false
-										},
-										{
-											"_type": "UMLAttribute",
-											"_id": "AAAAAAFfnXDcNhyfnRQ=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "id",
-											"documentation": " An identifier is a name that identifies (that is, labels the identity of) either a unique slave.",
-											"visibility": "private",
-											"isStatic": false,
-											"isLeaf": false,
-											"type": "int",
-											"isReadOnly": false,
-											"isOrdered": false,
-											"isUnique": true,
-											"isDerived": false,
-											"aggregation": "none",
-											"isID": false
-										},
-										{
-											"_type": "UMLAttribute",
-											"_id": "AAAAAAFfnXEY+RymPtA=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "isMale",
-											"documentation": "Gender is the range of characteristics pertaining to, and differentiating between, masculinity and femininity. if isMale is true true  slave is a male, or else she's a female. ",
-											"visibility": "private",
-											"isStatic": false,
-											"isLeaf": false,
-											"type": "boolean",
-											"isReadOnly": false,
-											"isOrdered": false,
-											"isUnique": false,
-											"isDerived": false,
-											"aggregation": "none",
-											"isID": false
-										},
-										{
-											"_type": "UMLAttribute",
-											"_id": "AAAAAAFfoXKDbOKmHkI=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "productivity",
-											"documentation": "Productivity describes various measures of the efficiency of production. A productivity measure is expressed as the ratio of output to inputs used in a production process.",
-											"visibility": "private",
-											"isStatic": false,
-											"isLeaf": false,
-											"type": "Double",
-											"isReadOnly": false,
-											"isOrdered": false,
-											"isUnique": false,
-											"isDerived": false,
-											"aggregation": "none",
-											"isID": false
-										}
-									],
-									"operations": [
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfopT1BlMKfSk=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "Slave",
-											"documentation": "Initial constructor for Slave. ",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfopYEVFMtyfA=",
-													"_parent": {
-														"$ref": "AAAAAAFfopT1BlMKfSk="
-													},
-													"name": "height",
-													"documentation": "height of a new slave",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Double",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfopYEVVMupNc=",
-													"_parent": {
-														"$ref": "AAAAAAFfopT1BlMKfSk="
-													},
-													"name": "weight",
-													"documentation": "weight of a new slave",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Double",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfopYEVVMvHFM=",
-													"_parent": {
-														"$ref": "AAAAAAFfopT1BlMKfSk="
-													},
-													"name": "age",
-													"documentation": "age of a new slave",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "int",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfopYEVlMwcYA=",
-													"_parent": {
-														"$ref": "AAAAAAFfopT1BlMKfSk="
-													},
-													"name": "isMale",
-													"documentation": "Gender of a new slave. If true - his a male.\n",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "boolean",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoph3qlcrtHA=",
-													"_parent": {
-														"$ref": "AAAAAAFfopT1BlMKfSk="
-													},
-													"documentation": "void",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfopYEUlMsS/8=",
-													"_parent": {
-														"$ref": "AAAAAAFfopT1BlMKfSk="
-													},
-													"name": "id",
-													"documentation": "How effective he can work in percentage",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "int",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfor9JGXWfyLA=",
-													"_parent": {
-														"$ref": "AAAAAAFfopT1BlMKfSk="
-													},
-													"name": "productivity",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Double",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfop6Z+lqKJHY=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "Slave",
-											"documentation": "Constructor of a new Slave with autoclaculate productivity.",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfop7UuVriXrk=",
-													"_parent": {
-														"$ref": "AAAAAAFfop6Z+lqKJHY="
-													},
-													"name": "height",
-													"documentation": "height of a new slave",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Double",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfop7Uulrj/vU=",
-													"_parent": {
-														"$ref": "AAAAAAFfop6Z+lqKJHY="
-													},
-													"name": "weight",
-													"documentation": "weight of a new slave",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Double",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfop7Uu1rkWX8=",
-													"_parent": {
-														"$ref": "AAAAAAFfop6Z+lqKJHY="
-													},
-													"name": "age",
-													"documentation": "age of a new slave",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "int",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfop7Uu1rlHY0=",
-													"_parent": {
-														"$ref": "AAAAAAFfop6Z+lqKJHY="
-													},
-													"name": "isMale",
-													"documentation": "Gender of a new slave. If true - his a male.\n",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "boolean",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfop7UvFrmSNw=",
-													"_parent": {
-														"$ref": "AAAAAAFfop6Z+lqKJHY="
-													},
-													"documentation": "void",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfor+GlHXSA18=",
-													"_parent": {
-														"$ref": "AAAAAAFfop6Z+lqKJHY="
-													},
-													"name": "id",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "int",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFforrtgGpyO/c=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "getHeight",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFforrtgWpzPAM=",
-													"_parent": {
-														"$ref": "AAAAAAFforrtgGpyO/c="
-													},
-													"documentation": "slave's height",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Double",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFforsAsGrVTXc=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "getWeight",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFforsAsGrWhCM=",
-													"_parent": {
-														"$ref": "AAAAAAFforsAsGrVTXc="
-													},
-													"documentation": "slave's weight",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Double",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFforsAsGrXu0I=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "setWeight",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFforsAsGrYn3s=",
-													"_parent": {
-														"$ref": "AAAAAAFforsAsGrXu0I="
-													},
-													"name": "value",
-													"documentation": "slave's weight",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Double",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFforsRfGtQKU8=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "getAge",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFforsRfGtRW+g=",
-													"_parent": {
-														"$ref": "AAAAAAFforsRfGtQKU8="
-													},
-													"documentation": "slave's age",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "int",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFforsacmuzr4g=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "getId",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFforsacmu0mk8=",
-													"_parent": {
-														"$ref": "AAAAAAFforsacmuzr4g="
-													},
-													"documentation": "slave's id",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "int",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFforskD2wWPkc=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "getIsMale",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFforskD2wXeCQ=",
-													"_parent": {
-														"$ref": "AAAAAAFforskD2wWPkc="
-													},
-													"documentation": "slave's masculinity",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "boolean",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFforsvjGx5BMU=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "getProductivity",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFforsvjGx6i/U=",
-													"_parent": {
-														"$ref": "AAAAAAFforsvjGx5BMU="
-													},
-													"documentation": "slave's productivity",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Double",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFforsvjGx7jgU=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "setProductivity",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFforsvjGx8zkI=",
-													"_parent": {
-														"$ref": "AAAAAAFforsvjGx7jgU="
-													},
-													"name": "value",
-													"documentation": "slave's productivity",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Double",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfosH/ens31KE=",
-											"_parent": {
-												"$ref": "AAAAAAFfnW3dqRw+/js="
-											},
-											"name": "calculateProductivity",
-											"documentation": "Calculates productivity with ",
-											"visibility": "private",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfosJmC3tWM2o=",
-													"_parent": {
-														"$ref": "AAAAAAFfosH/ens31KE="
-													},
-													"documentation": "slave's productivity",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										}
-									],
-									"isAbstract": false,
-									"isFinalSpecialization": false,
-									"isLeaf": false,
-									"isActive": false
-								}
-							],
-							"visibility": "public"
-						},
-						{
-							"_type": "UMLPackage",
-							"_id": "AAAAAAFfnZfHnyFk1NQ=",
-							"_parent": {
-								"$ref": "AAAAAAFfnYjA1B32cU4="
-							},
-							"name": "Controller",
-							"ownedElements": [
-								{
-									"_type": "UMLInterface",
-									"_id": "AAAAAAFfoRxcSLWLzZA=",
-									"_parent": {
-										"$ref": "AAAAAAFfnZfHnyFk1NQ="
-									},
-									"name": "Controller",
-									"visibility": "public",
-									"operations": [
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfoR1X7bZcVUM=",
-											"_parent": {
-												"$ref": "AAAAAAFfoRxcSLWLzZA="
-											},
-											"name": "addSlave",
-											"documentation": "Add slave in model ",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoR2kKbZsndY=",
-													"_parent": {
-														"$ref": "AAAAAAFfoR1X7bZcVUM="
-													},
-													"name": "slave",
-													"documentation": "Slave to add",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": {
-														"$ref": "AAAAAAFfnW3dqRw+/js="
-													},
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoR2kKrZtwIU=",
-													"_parent": {
-														"$ref": "AAAAAAFfoR1X7bZcVUM="
-													},
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfoR4Ug7cnXI8=",
-											"_parent": {
-												"$ref": "AAAAAAFfoRxcSLWLzZA="
-											},
-											"name": "addSlave",
-											"documentation": "Add slave in model",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoR4a9bc3WM0=",
-													"_parent": {
-														"$ref": "AAAAAAFfoR4Ug7cnXI8="
-													},
-													"name": "height",
-													"documentation": "slaves' height ",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Double",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoR4a9rc41jg=",
-													"_parent": {
-														"$ref": "AAAAAAFfoR4Ug7cnXI8="
-													},
-													"name": "weight",
-													"documentation": "slaves' weight ",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "Double",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoR4a97c56Ew=",
-													"_parent": {
-														"$ref": "AAAAAAFfoR4Ug7cnXI8="
-													},
-													"name": "age",
-													"documentation": "slaves' age",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "int",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoR4a97c6rIw=",
-													"_parent": {
-														"$ref": "AAAAAAFfoR4Ug7cnXI8="
-													},
-													"name": "isMale",
-													"documentation": "slaves' masculinity ",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "boolean",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoR4a97c7ir4=",
-													"_parent": {
-														"$ref": "AAAAAAFfoR4Ug7cnXI8="
-													},
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfoR5R/bfHZ2E=",
-											"_parent": {
-												"$ref": "AAAAAAFfoRxcSLWLzZA="
-											},
-											"name": "removeSlave",
-											"documentation": "tells to model for remove the slave",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoR5Wj7fXffA=",
-													"_parent": {
-														"$ref": "AAAAAAFfoR5R/bfHZ2E="
-													},
-													"name": "slave",
-													"documentation": "slave to remove",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": {
-														"$ref": "AAAAAAFfnW3dqRw+/js="
-													},
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoR5Wj7fY+HY=",
-													"_parent": {
-														"$ref": "AAAAAAFfoR5R/bfHZ2E="
-													},
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfoR52ZLgslgY=",
-											"_parent": {
-												"$ref": "AAAAAAFfoRxcSLWLzZA="
-											},
-											"name": "removeSlave",
-											"documentation": "tells to model for remove the slave by id",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoR56fbg8Ofk=",
-													"_parent": {
-														"$ref": "AAAAAAFfoR52ZLgslgY="
-													},
-													"name": "id",
-													"documentation": "slaves's id to remove the slave by it.",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "int",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoR56fbg9hDE=",
-													"_parent": {
-														"$ref": "AAAAAAFfoR52ZLgslgY="
-													},
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										},
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfoR6bvriXRgs=",
-											"_parent": {
-												"$ref": "AAAAAAFfoRxcSLWLzZA="
-											},
-											"name": "searchSlave",
-											"documentation": "tells to model for search  the slave by the query",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoR6fR7inhw0=",
-													"_parent": {
-														"$ref": "AAAAAAFfoR6bvriXRgs="
-													},
-													"name": "querry",
-													"documentation": "querry for search",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "String",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoR6fR7ioRy0=",
-													"_parent": {
-														"$ref": "AAAAAAFfoR6bvriXRgs="
-													},
-													"documentation": "list of founded slaves",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "List<Slave>",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										}
-									],
-									"isAbstract": false,
-									"isFinalSpecialization": false,
-									"isLeaf": false
-								},
-								{
-									"_type": "UMLClass",
-									"_id": "AAAAAAFfoSF9XbslK+8=",
-									"_parent": {
-										"$ref": "AAAAAAFfnZfHnyFk1NQ="
-									},
-									"name": "SlaveController",
-									"ownedElements": [
-										{
-											"_type": "UMLInterfaceRealization",
-											"_id": "AAAAAAFfoSHzQ7vhw0A=",
-											"_parent": {
-												"$ref": "AAAAAAFfoSF9XbslK+8="
-											},
-											"source": {
-												"$ref": "AAAAAAFfoSF9XbslK+8="
-											},
-											"target": {
-												"$ref": "AAAAAAFfoRxcSLWLzZA="
-											},
-											"visibility": "public"
-										}
-									],
-									"visibility": "public",
-									"operations": [
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfoiyZPvJrw14=",
-											"_parent": {
-												"$ref": "AAAAAAFfoSF9XbslK+8="
-											},
-											"name": "SlaveController",
-											"documentation": "Initial constructor with model",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoizjYfKNi0U=",
-													"_parent": {
-														"$ref": "AAAAAAFfoiyZPvJrw14="
-													},
-													"name": "model",
-													"documentation": "model to manage.",
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": {
-														"$ref": "AAAAAAFfnYCSbR1HpvY="
-													},
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "in"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										}
-									],
-									"isAbstract": false,
-									"isFinalSpecialization": false,
-									"isLeaf": false,
-									"isActive": false
-								}
-							],
-							"visibility": "public"
-						},
-						{
-							"_type": "UMLPackage",
-							"_id": "AAAAAAFfnZhl7yLBhGY=",
-							"_parent": {
-								"$ref": "AAAAAAFfnYjA1B32cU4="
-							},
-							"name": "View",
-							"ownedElements": [
-								{
-									"_type": "UMLInterface",
-									"_id": "AAAAAAFfoR/+z7lEZ2g=",
-									"_parent": {
-										"$ref": "AAAAAAFfnZhl7yLBhGY="
-									},
-									"name": "Observer",
-									"ownedElements": [
-										{
-											"_type": "UMLAssociation",
-											"_id": "AAAAAAFforSvb2e5zwY=",
-											"_parent": {
-												"$ref": "AAAAAAFfoR/+z7lEZ2g="
-											},
-											"documentation": "List of observers to trigger the view",
-											"end1": {
-												"_type": "UMLAssociationEnd",
-												"_id": "AAAAAAFforSvb2e6A34=",
-												"_parent": {
-													"$ref": "AAAAAAFforSvb2e5zwY="
-												},
-												"name": "observers",
-												"reference": {
-													"$ref": "AAAAAAFfoR/+z7lEZ2g="
-												},
-												"visibility": "private",
-												"navigable": true,
-												"aggregation": "none",
-												"multiplicity": "0..*",
-												"isReadOnly": false,
-												"isOrdered": true,
-												"isUnique": false,
-												"isDerived": false,
-												"isID": false
-											},
-											"end2": {
-												"_type": "UMLAssociationEnd",
-												"_id": "AAAAAAFforSvb2e7Txw=",
-												"_parent": {
-													"$ref": "AAAAAAFforSvb2e5zwY="
-												},
-												"reference": {
-													"$ref": "AAAAAAFfnYa3LB3CgK0="
-												},
-												"visibility": "public",
-												"navigable": true,
-												"aggregation": "composite",
-												"isReadOnly": false,
-												"isOrdered": false,
-												"isUnique": false,
-												"isDerived": false,
-												"isID": false
-											},
-											"visibility": "public",
-											"isDerived": false
-										}
-									],
-									"visibility": "public",
-									"operations": [
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfoSBI47n/0tg=",
-											"_parent": {
-												"$ref": "AAAAAAFfoR/+z7lEZ2g="
-											},
-											"name": "update",
-											"documentation": "Action performed after the trigger",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoSBz+LoPCgg=",
-													"_parent": {
-														"$ref": "AAAAAAFfoSBI47n/0tg="
-													},
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										}
-									],
-									"isAbstract": false,
-									"isFinalSpecialization": false,
-									"isLeaf": false
-								},
-								{
-									"_type": "UMLInterface",
-									"_id": "AAAAAAFfoSTS3sEU4hQ=",
-									"_parent": {
-										"$ref": "AAAAAAFfnZhl7yLBhGY="
-									},
-									"name": "View",
-									"ownedElements": [
-										{
-											"_type": "UMLAssociation",
-											"_id": "AAAAAAFfoSYT+cRlkPg=",
-											"_parent": {
-												"$ref": "AAAAAAFfoSTS3sEU4hQ="
-											},
-											"end1": {
-												"_type": "UMLAssociationEnd",
-												"_id": "AAAAAAFfoSYT+cRm6eo=",
-												"_parent": {
-													"$ref": "AAAAAAFfoSYT+cRlkPg="
-												},
-												"name": "view",
-												"reference": {
-													"$ref": "AAAAAAFfoSTS3sEU4hQ="
-												},
-												"visibility": "private",
-												"navigable": true,
-												"aggregation": "none",
-												"multiplicity": "1",
-												"isReadOnly": false,
-												"isOrdered": false,
-												"isUnique": false,
-												"isDerived": false,
-												"isID": false
-											},
-											"end2": {
-												"_type": "UMLAssociationEnd",
-												"_id": "AAAAAAFfoSYT+cRnT3w=",
-												"_parent": {
-													"$ref": "AAAAAAFfoSYT+cRlkPg="
-												},
-												"reference": {
-													"$ref": "AAAAAAFfoSF9XbslK+8="
-												},
-												"visibility": "public",
-												"navigable": true,
-												"aggregation": "none",
-												"isReadOnly": false,
-												"isOrdered": false,
-												"isUnique": false,
-												"isDerived": false,
-												"isID": false
-											},
-											"visibility": "private",
-											"isDerived": false
-										}
-									],
-									"visibility": "public",
-									"operations": [
-										{
-											"_type": "UMLOperation",
-											"_id": "AAAAAAFfoYFAM+w/2+s=",
-											"_parent": {
-												"$ref": "AAAAAAFfoSTS3sEU4hQ="
-											},
-											"name": "launch",
-											"documentation": "Launch the view or CLI ",
-											"visibility": "public",
-											"isStatic": false,
-											"isLeaf": false,
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAFfoYGLnuxhIm4=",
-													"_parent": {
-														"$ref": "AAAAAAFfoYFAM+w/2+s="
-													},
-													"visibility": "public",
-													"isStatic": false,
-													"isLeaf": false,
-													"type": "void",
-													"isReadOnly": false,
-													"isOrdered": false,
-													"isUnique": false,
-													"direction": "return"
-												}
-											],
-											"concurrency": "sequential",
-											"isQuery": false,
-											"isAbstract": false
-										}
-									],
-									"isAbstract": false,
-									"isFinalSpecialization": false,
-									"isLeaf": false
-								},
-								{
-									"_type": "UMLPackage",
-									"_id": "AAAAAAFfom83pDYORdo=",
-									"_parent": {
-										"$ref": "AAAAAAFfnZhl7yLBhGY="
-									},
-									"name": "cli",
-									"ownedElements": [
-										{
-											"_type": "UMLClass",
-											"_id": "AAAAAAFfom/9PTe7F/M=",
-											"_parent": {
-												"$ref": "AAAAAAFfom83pDYORdo="
-											},
-											"name": "CLView",
-											"ownedElements": [
-												{
-													"_type": "UMLInterfaceRealization",
-													"_id": "AAAAAAFfonF1/jz0f88=",
-													"_parent": {
-														"$ref": "AAAAAAFfom/9PTe7F/M="
-													},
-													"source": {
-														"$ref": "AAAAAAFfom/9PTe7F/M="
-													},
-													"target": {
-														"$ref": "AAAAAAFfoR/+z7lEZ2g="
-													},
-													"visibility": "public"
-												},
-												{
-													"_type": "UMLInterfaceRealization",
-													"_id": "AAAAAAFfonGEyz0ym7M=",
-													"_parent": {
-														"$ref": "AAAAAAFfom/9PTe7F/M="
-													},
-													"source": {
-														"$ref": "AAAAAAFfom/9PTe7F/M="
-													},
-													"target": {
-														"$ref": "AAAAAAFfoSTS3sEU4hQ="
-													},
-													"visibility": "public"
-												}
-											],
-											"visibility": "public",
-											"isAbstract": false,
-											"isFinalSpecialization": false,
-											"isLeaf": false,
-											"isActive": false
-										}
-									],
-									"visibility": "public"
-								}
-							],
-							"visibility": "public"
-						}
-					],
-					"visibility": "public"
-				},
-				{
 					"_type": "UMLClassDiagram",
 					"_id": "AAAAAAFF+qBtyKM79qY=",
 					"_parent": {
@@ -13868,7 +11979,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "(from classes)",
+											"text": "(from cracker)",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -15412,7 +13523,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "(from classes)",
+											"text": "(from cracker)",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -15595,7 +13706,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "(from classes)",
+											"text": "(from cracker)",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -18618,7 +16729,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "(from Model)",
+											"text": "(from ru)",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -20820,66 +18931,1966 @@
 					]
 				},
 				{
-					"_type": "UMLClass",
-					"_id": "AAAAAAFfoSa248htmiw=",
+					"_type": "UMLPackage",
+					"_id": "AAAAAAFfowRt6uXjTbM=",
 					"_parent": {
 						"$ref": "AAAAAAFfoi/nwfX2QIo="
 					},
-					"name": "Main",
-					"visibility": "public",
-					"operations": [
+					"name": "ru",
+					"ownedElements": [
 						{
-							"_type": "UMLOperation",
-							"_id": "AAAAAAFfoSbPTsjWfjA=",
+							"_type": "UMLPackage",
+							"_id": "AAAAAAFfnYjA1B32cU4=",
 							"_parent": {
-								"$ref": "AAAAAAFfoSa248htmiw="
+								"$ref": "AAAAAAFfowRt6uXjTbM="
 							},
-							"name": "main",
-							"visibility": "public",
-							"isStatic": true,
-							"isLeaf": false,
-							"parameters": [
+							"name": "cracker",
+							"ownedElements": [
 								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFfoSci3Mj4VY0=",
+									"_type": "UMLPackage",
+									"_id": "AAAAAAFfnWiwlRvpgzI=",
 									"_parent": {
-										"$ref": "AAAAAAFfoSbPTsjWfjA="
+										"$ref": "AAAAAAFfnYjA1B32cU4="
 									},
-									"name": "args",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": "String",
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
+									"name": "Model",
+									"ownedElements": [
+										{
+											"_type": "UMLInterface",
+											"_id": "AAAAAAFfnWmt5RwH/4I=",
+											"_parent": {
+												"$ref": "AAAAAAFfnWiwlRvpgzI="
+											},
+											"name": "Observable",
+											"visibility": "public",
+											"operations": [
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfnXcH/ByyvTs=",
+													"_parent": {
+														"$ref": "AAAAAAFfnWmt5RwH/4I="
+													},
+													"name": "addObserver",
+													"documentation": "Add observer in collection or db",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfnX1aRxzO6EU=",
+															"_parent": {
+																"$ref": "AAAAAAFfnXcH/ByyvTs="
+															},
+															"name": "observer",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Observer",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfnX7A+BzcvpI=",
+															"_parent": {
+																"$ref": "AAAAAAFfnXcH/ByyvTs="
+															},
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfnX3ZVhzRKWw=",
+													"_parent": {
+														"$ref": "AAAAAAFfnWmt5RwH/4I="
+													},
+													"name": "notifyAllObservers",
+													"documentation": "Triggers all available observers to do something",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfnX5piBzZ73c=",
+															"_parent": {
+																"$ref": "AAAAAAFfnX3ZVhzRKWw="
+															},
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												}
+											],
+											"isAbstract": false,
+											"isFinalSpecialization": false,
+											"isLeaf": false
+										},
+										{
+											"_type": "UMLClass",
+											"_id": "AAAAAAFfnYa3LB3CgK0=",
+											"_parent": {
+												"$ref": "AAAAAAFfnWiwlRvpgzI="
+											},
+											"name": "SlaveMarketModel",
+											"ownedElements": [
+												{
+													"_type": "UMLInterfaceRealization",
+													"_id": "AAAAAAFfnYpwzR5aGq4=",
+													"_parent": {
+														"$ref": "AAAAAAFfnYa3LB3CgK0="
+													},
+													"source": {
+														"$ref": "AAAAAAFfnYa3LB3CgK0="
+													},
+													"target": {
+														"$ref": "AAAAAAFfnWmt5RwH/4I="
+													},
+													"visibility": "public"
+												},
+												{
+													"_type": "UMLInterfaceRealization",
+													"_id": "AAAAAAFfnYqSAR5ra/g=",
+													"_parent": {
+														"$ref": "AAAAAAFfnYa3LB3CgK0="
+													},
+													"source": {
+														"$ref": "AAAAAAFfnYa3LB3CgK0="
+													},
+													"target": {
+														"$ref": "AAAAAAFfnYCSbR1HpvY="
+													},
+													"visibility": "public"
+												}
+											],
+											"visibility": "public",
+											"isAbstract": false,
+											"isFinalSpecialization": false,
+											"isLeaf": false,
+											"isActive": false
+										},
+										{
+											"_type": "UMLInterface",
+											"_id": "AAAAAAFfnYCSbR1HpvY=",
+											"_parent": {
+												"$ref": "AAAAAAFfnWiwlRvpgzI="
+											},
+											"name": "Model",
+											"ownedElements": [
+												{
+													"_type": "UMLAssociation",
+													"_id": "AAAAAAFfoSNKeb3A3lw=",
+													"_parent": {
+														"$ref": "AAAAAAFfnYCSbR1HpvY="
+													},
+													"end1": {
+														"_type": "UMLAssociationEnd",
+														"_id": "AAAAAAFfoSNKeb3BTho=",
+														"_parent": {
+															"$ref": "AAAAAAFfoSNKeb3A3lw="
+														},
+														"name": "model",
+														"reference": {
+															"$ref": "AAAAAAFfnYCSbR1HpvY="
+														},
+														"visibility": "private",
+														"navigable": true,
+														"aggregation": "none",
+														"multiplicity": "1",
+														"isReadOnly": false,
+														"isOrdered": false,
+														"isUnique": false,
+														"isDerived": false,
+														"isID": false
+													},
+													"end2": {
+														"_type": "UMLAssociationEnd",
+														"_id": "AAAAAAFfoSNKeb3CllE=",
+														"_parent": {
+															"$ref": "AAAAAAFfoSNKeb3A3lw="
+														},
+														"reference": {
+															"$ref": "AAAAAAFfoSF9XbslK+8="
+														},
+														"visibility": "public",
+														"navigable": true,
+														"aggregation": "none",
+														"isReadOnly": false,
+														"isOrdered": false,
+														"isUnique": false,
+														"isDerived": false,
+														"isID": false
+													},
+													"visibility": "private",
+													"isDerived": false
+												}
+											],
+											"documentation": "Provides interface to manage slaves",
+											"visibility": "public",
+											"operations": [
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfnYDf1x1xw0U=",
+													"_parent": {
+														"$ref": "AAAAAAFfnYCSbR1HpvY="
+													},
+													"name": "addSlave",
+													"documentation": "Adding slave in database or something like that",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfnYKGoh2ImC4=",
+															"_parent": {
+																"$ref": "AAAAAAFfnYDf1x1xw0U="
+															},
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfnYLwsh2Oaec=",
+															"_parent": {
+																"$ref": "AAAAAAFfnYDf1x1xw0U="
+															},
+															"name": "slave",
+															"documentation": "Slave to add",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": {
+																"$ref": "AAAAAAFfnW3dqRw+/js="
+															},
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfnYMxgh2R5p4=",
+													"_parent": {
+														"$ref": "AAAAAAFfnYCSbR1HpvY="
+													},
+													"name": "addSlave",
+													"documentation": "Do the same thing like \n@code{addSlave(Slave slave)}",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfnYPxyR2YQxQ=",
+															"_parent": {
+																"$ref": "AAAAAAFfnYMxgh2R5p4="
+															},
+															"name": "height",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Double",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfnYPxyh2Zi2Q=",
+															"_parent": {
+																"$ref": "AAAAAAFfnYMxgh2R5p4="
+															},
+															"name": "weight",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Double",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfnYPxyx2a6hI=",
+															"_parent": {
+																"$ref": "AAAAAAFfnYMxgh2R5p4="
+															},
+															"name": "age",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "int",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfnYPxyx2bG94=",
+															"_parent": {
+																"$ref": "AAAAAAFfnYMxgh2R5p4="
+															},
+															"name": "isMale",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "boolean",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfnYPxyx2cjD4=",
+															"_parent": {
+																"$ref": "AAAAAAFfnYMxgh2R5p4="
+															},
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfnYGe6R18U5M=",
+													"_parent": {
+														"$ref": "AAAAAAFfnYCSbR1HpvY="
+													},
+													"name": "removeSlave",
+													"documentation": "removes slave out our collection",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfnYI3/R2DNmg=",
+															"_parent": {
+																"$ref": "AAAAAAFfnYGe6R18U5M="
+															},
+															"name": "slave",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": {
+																"$ref": "AAAAAAFfnW3dqRw+/js="
+															},
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfnYI3/R2Exws=",
+															"_parent": {
+																"$ref": "AAAAAAFfnYGe6R18U5M="
+															},
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfnYRJlh2l9P8=",
+													"_parent": {
+														"$ref": "AAAAAAFfnYCSbR1HpvY="
+													},
+													"name": "removeSlave",
+													"documentation": "removes slave out our collection using only unique id",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfnYR/KB2si6s=",
+															"_parent": {
+																"$ref": "AAAAAAFfnYRJlh2l9P8="
+															},
+															"name": "id",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "int",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfnYR/KB2t8qA=",
+															"_parent": {
+																"$ref": "AAAAAAFfnYRJlh2l9P8="
+															},
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfoRg2RbFzZNo=",
+													"_parent": {
+														"$ref": "AAAAAAFfnYCSbR1HpvY="
+													},
+													"name": "searchSlave",
+													"documentation": "Search slave by the string  query\nlike \"height>150 productivity>40 weight<90 age=22\"",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoRiczLGDQtw=",
+															"_parent": {
+																"$ref": "AAAAAAFfoRg2RbFzZNo="
+															},
+															"name": "querry",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "String",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoRiczbGEll4=",
+															"_parent": {
+																"$ref": "AAAAAAFfoRg2RbFzZNo="
+															},
+															"documentation": "list of founed slaves",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "List<Slave>",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												}
+											],
+											"isAbstract": false,
+											"isFinalSpecialization": false,
+											"isLeaf": false
+										},
+										{
+											"_type": "UMLClass",
+											"_id": "AAAAAAFfnW3dqRw+/js=",
+											"_parent": {
+												"$ref": "AAAAAAFfnWiwlRvpgzI="
+											},
+											"name": "Slave",
+											"ownedElements": [
+												{
+													"_type": "UMLAssociation",
+													"_id": "AAAAAAFfnZWkhh+roqs=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"end1": {
+														"_type": "UMLAssociationEnd",
+														"_id": "AAAAAAFfnZWkhh+s+Fg=",
+														"_parent": {
+															"$ref": "AAAAAAFfnZWkhh+roqs="
+														},
+														"name": "slaves",
+														"reference": {
+															"$ref": "AAAAAAFfnW3dqRw+/js="
+														},
+														"visibility": "private",
+														"navigable": true,
+														"aggregation": "none",
+														"multiplicity": "0..*",
+														"isReadOnly": false,
+														"isOrdered": true,
+														"isUnique": false,
+														"isDerived": false,
+														"isID": false
+													},
+													"end2": {
+														"_type": "UMLAssociationEnd",
+														"_id": "AAAAAAFfnZWkhh+tlXs=",
+														"_parent": {
+															"$ref": "AAAAAAFfnZWkhh+roqs="
+														},
+														"reference": {
+															"$ref": "AAAAAAFfnYa3LB3CgK0="
+														},
+														"visibility": "public",
+														"navigable": true,
+														"aggregation": "composite",
+														"isReadOnly": false,
+														"isOrdered": false,
+														"isUnique": false,
+														"isDerived": false,
+														"isID": false
+													},
+													"stereotype": "",
+													"visibility": "private",
+													"isDerived": false
+												}
+											],
+											"visibility": "public",
+											"attributes": [
+												{
+													"_type": "UMLAttribute",
+													"_id": "AAAAAAFfnW866ByFDdI=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "height",
+													"documentation": "Human height or stature is the distance from the bottom of the feet to the top of the head in a human body, standing erect.",
+													"visibility": "private",
+													"isStatic": false,
+													"isLeaf": false,
+													"type": "Double",
+													"isReadOnly": false,
+													"isOrdered": false,
+													"isUnique": false,
+													"isDerived": false,
+													"aggregation": "none",
+													"isID": false
+												},
+												{
+													"_type": "UMLAttribute",
+													"_id": "AAAAAAFfnXA4/hyQ32U=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "weight",
+													"documentation": "The term human body weight is used colloquially and in the biological and medical sciences to refer to a person's mass or weight.",
+													"visibility": "private",
+													"isStatic": false,
+													"isLeaf": false,
+													"type": "Double",
+													"isReadOnly": false,
+													"isOrdered": false,
+													"isUnique": false,
+													"isDerived": false,
+													"aggregation": "none",
+													"isID": false
+												},
+												{
+													"_type": "UMLAttribute",
+													"_id": "AAAAAAFfnXCA6ByXYX8=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "age",
+													"documentation": "The mesuare to calculate human ageing.\nWhere the Ageing or aging (see spelling differences) is the process of becoming older.",
+													"visibility": "private",
+													"isStatic": false,
+													"isLeaf": false,
+													"type": "int",
+													"isReadOnly": false,
+													"isOrdered": false,
+													"isUnique": false,
+													"isDerived": false,
+													"aggregation": "none",
+													"isID": false
+												},
+												{
+													"_type": "UMLAttribute",
+													"_id": "AAAAAAFfnXDcNhyfnRQ=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "id",
+													"documentation": " An identifier is a name that identifies (that is, labels the identity of) either a unique slave.",
+													"visibility": "private",
+													"isStatic": false,
+													"isLeaf": false,
+													"type": "int",
+													"isReadOnly": false,
+													"isOrdered": false,
+													"isUnique": true,
+													"isDerived": false,
+													"aggregation": "none",
+													"isID": false
+												},
+												{
+													"_type": "UMLAttribute",
+													"_id": "AAAAAAFfnXEY+RymPtA=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "isMale",
+													"documentation": "Gender is the range of characteristics pertaining to, and differentiating between, masculinity and femininity. if isMale is true true  slave is a male, or else she's a female. ",
+													"visibility": "private",
+													"isStatic": false,
+													"isLeaf": false,
+													"type": "boolean",
+													"isReadOnly": false,
+													"isOrdered": false,
+													"isUnique": false,
+													"isDerived": false,
+													"aggregation": "none",
+													"isID": false
+												},
+												{
+													"_type": "UMLAttribute",
+													"_id": "AAAAAAFfoXKDbOKmHkI=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "productivity",
+													"documentation": "Productivity describes various measures of the efficiency of production. A productivity measure is expressed as the ratio of output to inputs used in a production process.",
+													"visibility": "private",
+													"isStatic": false,
+													"isLeaf": false,
+													"type": "Double",
+													"isReadOnly": false,
+													"isOrdered": false,
+													"isUnique": false,
+													"isDerived": false,
+													"aggregation": "none",
+													"isID": false
+												}
+											],
+											"operations": [
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfopT1BlMKfSk=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "Slave",
+													"documentation": "Initial constructor for Slave. ",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfopYEVFMtyfA=",
+															"_parent": {
+																"$ref": "AAAAAAFfopT1BlMKfSk="
+															},
+															"name": "height",
+															"documentation": "height of a new slave",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Double",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfopYEVVMupNc=",
+															"_parent": {
+																"$ref": "AAAAAAFfopT1BlMKfSk="
+															},
+															"name": "weight",
+															"documentation": "weight of a new slave",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Double",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfopYEVVMvHFM=",
+															"_parent": {
+																"$ref": "AAAAAAFfopT1BlMKfSk="
+															},
+															"name": "age",
+															"documentation": "age of a new slave",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "int",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfopYEVlMwcYA=",
+															"_parent": {
+																"$ref": "AAAAAAFfopT1BlMKfSk="
+															},
+															"name": "isMale",
+															"documentation": "Gender of a new slave. If true - his a male.\n",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "boolean",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoph3qlcrtHA=",
+															"_parent": {
+																"$ref": "AAAAAAFfopT1BlMKfSk="
+															},
+															"documentation": "void",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfopYEUlMsS/8=",
+															"_parent": {
+																"$ref": "AAAAAAFfopT1BlMKfSk="
+															},
+															"name": "id",
+															"documentation": "How effective he can work in percentage",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "int",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfor9JGXWfyLA=",
+															"_parent": {
+																"$ref": "AAAAAAFfopT1BlMKfSk="
+															},
+															"name": "productivity",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Double",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfop6Z+lqKJHY=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "Slave",
+													"documentation": "Constructor of a new Slave with autoclaculate productivity.",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfop7UuVriXrk=",
+															"_parent": {
+																"$ref": "AAAAAAFfop6Z+lqKJHY="
+															},
+															"name": "height",
+															"documentation": "height of a new slave",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Double",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfop7Uulrj/vU=",
+															"_parent": {
+																"$ref": "AAAAAAFfop6Z+lqKJHY="
+															},
+															"name": "weight",
+															"documentation": "weight of a new slave",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Double",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfop7Uu1rkWX8=",
+															"_parent": {
+																"$ref": "AAAAAAFfop6Z+lqKJHY="
+															},
+															"name": "age",
+															"documentation": "age of a new slave",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "int",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfop7Uu1rlHY0=",
+															"_parent": {
+																"$ref": "AAAAAAFfop6Z+lqKJHY="
+															},
+															"name": "isMale",
+															"documentation": "Gender of a new slave. If true - his a male.\n",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "boolean",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfop7UvFrmSNw=",
+															"_parent": {
+																"$ref": "AAAAAAFfop6Z+lqKJHY="
+															},
+															"documentation": "void",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfor+GlHXSA18=",
+															"_parent": {
+																"$ref": "AAAAAAFfop6Z+lqKJHY="
+															},
+															"name": "id",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "int",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFforrtgGpyO/c=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "getHeight",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFforrtgWpzPAM=",
+															"_parent": {
+																"$ref": "AAAAAAFforrtgGpyO/c="
+															},
+															"documentation": "slave's height",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Double",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFforsAsGrVTXc=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "getWeight",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFforsAsGrWhCM=",
+															"_parent": {
+																"$ref": "AAAAAAFforsAsGrVTXc="
+															},
+															"documentation": "slave's weight",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Double",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFforsAsGrXu0I=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "setWeight",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFforsAsGrYn3s=",
+															"_parent": {
+																"$ref": "AAAAAAFforsAsGrXu0I="
+															},
+															"name": "value",
+															"documentation": "slave's weight",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Double",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFforsRfGtQKU8=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "getAge",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFforsRfGtRW+g=",
+															"_parent": {
+																"$ref": "AAAAAAFforsRfGtQKU8="
+															},
+															"documentation": "slave's age",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "int",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFforsacmuzr4g=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "getId",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFforsacmu0mk8=",
+															"_parent": {
+																"$ref": "AAAAAAFforsacmuzr4g="
+															},
+															"documentation": "slave's id",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "int",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFforskD2wWPkc=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "getIsMale",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFforskD2wXeCQ=",
+															"_parent": {
+																"$ref": "AAAAAAFforskD2wWPkc="
+															},
+															"documentation": "slave's masculinity",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "boolean",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFforsvjGx5BMU=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "getProductivity",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFforsvjGx6i/U=",
+															"_parent": {
+																"$ref": "AAAAAAFforsvjGx5BMU="
+															},
+															"documentation": "slave's productivity",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Double",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFforsvjGx7jgU=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "setProductivity",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFforsvjGx8zkI=",
+															"_parent": {
+																"$ref": "AAAAAAFforsvjGx7jgU="
+															},
+															"name": "value",
+															"documentation": "slave's productivity",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Double",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfosH/ens31KE=",
+													"_parent": {
+														"$ref": "AAAAAAFfnW3dqRw+/js="
+													},
+													"name": "calculateProductivity",
+													"documentation": "Calculates productivity with ",
+													"visibility": "private",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfosJmC3tWM2o=",
+															"_parent": {
+																"$ref": "AAAAAAFfosH/ens31KE="
+															},
+															"documentation": "slave's productivity",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												}
+											],
+											"isAbstract": false,
+											"isFinalSpecialization": false,
+											"isLeaf": false,
+											"isActive": false
+										}
+									],
+									"visibility": "public"
 								},
 								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFfoSci3cj5QBM=",
+									"_type": "UMLPackage",
+									"_id": "AAAAAAFfnZfHnyFk1NQ=",
 									"_parent": {
-										"$ref": "AAAAAAFfoSbPTsjWfjA="
+										"$ref": "AAAAAAFfnYjA1B32cU4="
 									},
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": "void",
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "return"
+									"name": "Controller",
+									"ownedElements": [
+										{
+											"_type": "UMLInterface",
+											"_id": "AAAAAAFfoRxcSLWLzZA=",
+											"_parent": {
+												"$ref": "AAAAAAFfnZfHnyFk1NQ="
+											},
+											"name": "Controller",
+											"visibility": "public",
+											"operations": [
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfoR1X7bZcVUM=",
+													"_parent": {
+														"$ref": "AAAAAAFfoRxcSLWLzZA="
+													},
+													"name": "addSlave",
+													"documentation": "Add slave in model ",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoR2kKbZsndY=",
+															"_parent": {
+																"$ref": "AAAAAAFfoR1X7bZcVUM="
+															},
+															"name": "slave",
+															"documentation": "Slave to add",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": {
+																"$ref": "AAAAAAFfnW3dqRw+/js="
+															},
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoR2kKrZtwIU=",
+															"_parent": {
+																"$ref": "AAAAAAFfoR1X7bZcVUM="
+															},
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfoR4Ug7cnXI8=",
+													"_parent": {
+														"$ref": "AAAAAAFfoRxcSLWLzZA="
+													},
+													"name": "addSlave",
+													"documentation": "Add slave in model",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoR4a9bc3WM0=",
+															"_parent": {
+																"$ref": "AAAAAAFfoR4Ug7cnXI8="
+															},
+															"name": "height",
+															"documentation": "slaves' height ",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Double",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoR4a9rc41jg=",
+															"_parent": {
+																"$ref": "AAAAAAFfoR4Ug7cnXI8="
+															},
+															"name": "weight",
+															"documentation": "slaves' weight ",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "Double",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoR4a97c56Ew=",
+															"_parent": {
+																"$ref": "AAAAAAFfoR4Ug7cnXI8="
+															},
+															"name": "age",
+															"documentation": "slaves' age",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "int",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoR4a97c6rIw=",
+															"_parent": {
+																"$ref": "AAAAAAFfoR4Ug7cnXI8="
+															},
+															"name": "isMale",
+															"documentation": "slaves' masculinity ",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "boolean",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoR4a97c7ir4=",
+															"_parent": {
+																"$ref": "AAAAAAFfoR4Ug7cnXI8="
+															},
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfoR5R/bfHZ2E=",
+													"_parent": {
+														"$ref": "AAAAAAFfoRxcSLWLzZA="
+													},
+													"name": "removeSlave",
+													"documentation": "tells to model for remove the slave",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoR5Wj7fXffA=",
+															"_parent": {
+																"$ref": "AAAAAAFfoR5R/bfHZ2E="
+															},
+															"name": "slave",
+															"documentation": "slave to remove",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": {
+																"$ref": "AAAAAAFfnW3dqRw+/js="
+															},
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoR5Wj7fY+HY=",
+															"_parent": {
+																"$ref": "AAAAAAFfoR5R/bfHZ2E="
+															},
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfoR52ZLgslgY=",
+													"_parent": {
+														"$ref": "AAAAAAFfoRxcSLWLzZA="
+													},
+													"name": "removeSlave",
+													"documentation": "tells to model for remove the slave by id",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoR56fbg8Ofk=",
+															"_parent": {
+																"$ref": "AAAAAAFfoR52ZLgslgY="
+															},
+															"name": "id",
+															"documentation": "slaves's id to remove the slave by it.",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "int",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoR56fbg9hDE=",
+															"_parent": {
+																"$ref": "AAAAAAFfoR52ZLgslgY="
+															},
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												},
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfoR6bvriXRgs=",
+													"_parent": {
+														"$ref": "AAAAAAFfoRxcSLWLzZA="
+													},
+													"name": "searchSlave",
+													"documentation": "tells to model for search  the slave by the query",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoR6fR7inhw0=",
+															"_parent": {
+																"$ref": "AAAAAAFfoR6bvriXRgs="
+															},
+															"name": "querry",
+															"documentation": "querry for search",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "String",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														},
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoR6fR7ioRy0=",
+															"_parent": {
+																"$ref": "AAAAAAFfoR6bvriXRgs="
+															},
+															"documentation": "list of founded slaves",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "List<Slave>",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												}
+											],
+											"isAbstract": false,
+											"isFinalSpecialization": false,
+											"isLeaf": false
+										},
+										{
+											"_type": "UMLClass",
+											"_id": "AAAAAAFfoSF9XbslK+8=",
+											"_parent": {
+												"$ref": "AAAAAAFfnZfHnyFk1NQ="
+											},
+											"name": "SlaveController",
+											"ownedElements": [
+												{
+													"_type": "UMLInterfaceRealization",
+													"_id": "AAAAAAFfoSHzQ7vhw0A=",
+													"_parent": {
+														"$ref": "AAAAAAFfoSF9XbslK+8="
+													},
+													"source": {
+														"$ref": "AAAAAAFfoSF9XbslK+8="
+													},
+													"target": {
+														"$ref": "AAAAAAFfoRxcSLWLzZA="
+													},
+													"visibility": "public"
+												}
+											],
+											"visibility": "public",
+											"operations": [
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfoiyZPvJrw14=",
+													"_parent": {
+														"$ref": "AAAAAAFfoSF9XbslK+8="
+													},
+													"name": "SlaveController",
+													"documentation": "Initial constructor with model",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoizjYfKNi0U=",
+															"_parent": {
+																"$ref": "AAAAAAFfoiyZPvJrw14="
+															},
+															"name": "model",
+															"documentation": "model to manage.",
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": {
+																"$ref": "AAAAAAFfnYCSbR1HpvY="
+															},
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "in"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												}
+											],
+											"isAbstract": false,
+											"isFinalSpecialization": false,
+											"isLeaf": false,
+											"isActive": false
+										}
+									],
+									"visibility": "public"
+								},
+								{
+									"_type": "UMLPackage",
+									"_id": "AAAAAAFfnZhl7yLBhGY=",
+									"_parent": {
+										"$ref": "AAAAAAFfnYjA1B32cU4="
+									},
+									"name": "View",
+									"ownedElements": [
+										{
+											"_type": "UMLInterface",
+											"_id": "AAAAAAFfoR/+z7lEZ2g=",
+											"_parent": {
+												"$ref": "AAAAAAFfnZhl7yLBhGY="
+											},
+											"name": "Observer",
+											"ownedElements": [
+												{
+													"_type": "UMLAssociation",
+													"_id": "AAAAAAFforSvb2e5zwY=",
+													"_parent": {
+														"$ref": "AAAAAAFfoR/+z7lEZ2g="
+													},
+													"documentation": "List of observers to trigger the view",
+													"end1": {
+														"_type": "UMLAssociationEnd",
+														"_id": "AAAAAAFforSvb2e6A34=",
+														"_parent": {
+															"$ref": "AAAAAAFforSvb2e5zwY="
+														},
+														"name": "observers",
+														"reference": {
+															"$ref": "AAAAAAFfoR/+z7lEZ2g="
+														},
+														"visibility": "private",
+														"navigable": true,
+														"aggregation": "none",
+														"multiplicity": "0..*",
+														"isReadOnly": false,
+														"isOrdered": true,
+														"isUnique": false,
+														"isDerived": false,
+														"isID": false
+													},
+													"end2": {
+														"_type": "UMLAssociationEnd",
+														"_id": "AAAAAAFforSvb2e7Txw=",
+														"_parent": {
+															"$ref": "AAAAAAFforSvb2e5zwY="
+														},
+														"reference": {
+															"$ref": "AAAAAAFfnYa3LB3CgK0="
+														},
+														"visibility": "public",
+														"navigable": true,
+														"aggregation": "composite",
+														"isReadOnly": false,
+														"isOrdered": false,
+														"isUnique": false,
+														"isDerived": false,
+														"isID": false
+													},
+													"visibility": "public",
+													"isDerived": false
+												}
+											],
+											"visibility": "public",
+											"operations": [
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfoSBI47n/0tg=",
+													"_parent": {
+														"$ref": "AAAAAAFfoR/+z7lEZ2g="
+													},
+													"name": "update",
+													"documentation": "Action performed after the trigger",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoSBz+LoPCgg=",
+															"_parent": {
+																"$ref": "AAAAAAFfoSBI47n/0tg="
+															},
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												}
+											],
+											"isAbstract": false,
+											"isFinalSpecialization": false,
+											"isLeaf": false
+										},
+										{
+											"_type": "UMLInterface",
+											"_id": "AAAAAAFfoSTS3sEU4hQ=",
+											"_parent": {
+												"$ref": "AAAAAAFfnZhl7yLBhGY="
+											},
+											"name": "View",
+											"ownedElements": [
+												{
+													"_type": "UMLAssociation",
+													"_id": "AAAAAAFfoSYT+cRlkPg=",
+													"_parent": {
+														"$ref": "AAAAAAFfoSTS3sEU4hQ="
+													},
+													"end1": {
+														"_type": "UMLAssociationEnd",
+														"_id": "AAAAAAFfoSYT+cRm6eo=",
+														"_parent": {
+															"$ref": "AAAAAAFfoSYT+cRlkPg="
+														},
+														"name": "view",
+														"reference": {
+															"$ref": "AAAAAAFfoSTS3sEU4hQ="
+														},
+														"visibility": "private",
+														"navigable": true,
+														"aggregation": "none",
+														"multiplicity": "1",
+														"isReadOnly": false,
+														"isOrdered": false,
+														"isUnique": false,
+														"isDerived": false,
+														"isID": false
+													},
+													"end2": {
+														"_type": "UMLAssociationEnd",
+														"_id": "AAAAAAFfoSYT+cRnT3w=",
+														"_parent": {
+															"$ref": "AAAAAAFfoSYT+cRlkPg="
+														},
+														"reference": {
+															"$ref": "AAAAAAFfoSF9XbslK+8="
+														},
+														"visibility": "public",
+														"navigable": true,
+														"aggregation": "none",
+														"isReadOnly": false,
+														"isOrdered": false,
+														"isUnique": false,
+														"isDerived": false,
+														"isID": false
+													},
+													"visibility": "private",
+													"isDerived": false
+												}
+											],
+											"visibility": "public",
+											"operations": [
+												{
+													"_type": "UMLOperation",
+													"_id": "AAAAAAFfoYFAM+w/2+s=",
+													"_parent": {
+														"$ref": "AAAAAAFfoSTS3sEU4hQ="
+													},
+													"name": "launch",
+													"documentation": "Launch the view or CLI ",
+													"visibility": "public",
+													"isStatic": false,
+													"isLeaf": false,
+													"parameters": [
+														{
+															"_type": "UMLParameter",
+															"_id": "AAAAAAFfoYGLnuxhIm4=",
+															"_parent": {
+																"$ref": "AAAAAAFfoYFAM+w/2+s="
+															},
+															"visibility": "public",
+															"isStatic": false,
+															"isLeaf": false,
+															"type": "void",
+															"isReadOnly": false,
+															"isOrdered": false,
+															"isUnique": false,
+															"direction": "return"
+														}
+													],
+													"concurrency": "sequential",
+													"isQuery": false,
+													"isAbstract": false
+												}
+											],
+											"isAbstract": false,
+											"isFinalSpecialization": false,
+											"isLeaf": false
+										},
+										{
+											"_type": "UMLPackage",
+											"_id": "AAAAAAFfom83pDYORdo=",
+											"_parent": {
+												"$ref": "AAAAAAFfnZhl7yLBhGY="
+											},
+											"name": "cli",
+											"ownedElements": [
+												{
+													"_type": "UMLClass",
+													"_id": "AAAAAAFfom/9PTe7F/M=",
+													"_parent": {
+														"$ref": "AAAAAAFfom83pDYORdo="
+													},
+													"name": "CLView",
+													"ownedElements": [
+														{
+															"_type": "UMLInterfaceRealization",
+															"_id": "AAAAAAFfonF1/jz0f88=",
+															"_parent": {
+																"$ref": "AAAAAAFfom/9PTe7F/M="
+															},
+															"source": {
+																"$ref": "AAAAAAFfom/9PTe7F/M="
+															},
+															"target": {
+																"$ref": "AAAAAAFfoR/+z7lEZ2g="
+															},
+															"visibility": "public"
+														},
+														{
+															"_type": "UMLInterfaceRealization",
+															"_id": "AAAAAAFfonGEyz0ym7M=",
+															"_parent": {
+																"$ref": "AAAAAAFfom/9PTe7F/M="
+															},
+															"source": {
+																"$ref": "AAAAAAFfom/9PTe7F/M="
+															},
+															"target": {
+																"$ref": "AAAAAAFfoSTS3sEU4hQ="
+															},
+															"visibility": "public"
+														}
+													],
+													"visibility": "public",
+													"isAbstract": false,
+													"isFinalSpecialization": false,
+													"isLeaf": false,
+													"isActive": false
+												}
+											],
+											"visibility": "public"
+										}
+									],
+									"visibility": "public"
 								}
 							],
-							"concurrency": "sequential",
-							"isQuery": false,
-							"isAbstract": false
+							"visibility": "public"
+						},
+						{
+							"_type": "UMLClass",
+							"_id": "AAAAAAFfoSa248htmiw=",
+							"_parent": {
+								"$ref": "AAAAAAFfowRt6uXjTbM="
+							},
+							"name": "Main",
+							"visibility": "public",
+							"operations": [
+								{
+									"_type": "UMLOperation",
+									"_id": "AAAAAAFfoSbPTsjWfjA=",
+									"_parent": {
+										"$ref": "AAAAAAFfoSa248htmiw="
+									},
+									"name": "main",
+									"visibility": "public",
+									"isStatic": true,
+									"isLeaf": false,
+									"parameters": [
+										{
+											"_type": "UMLParameter",
+											"_id": "AAAAAAFfoSci3Mj4VY0=",
+											"_parent": {
+												"$ref": "AAAAAAFfoSbPTsjWfjA="
+											},
+											"name": "args",
+											"visibility": "public",
+											"isStatic": false,
+											"isLeaf": false,
+											"type": "String",
+											"isReadOnly": false,
+											"isOrdered": false,
+											"isUnique": false,
+											"direction": "in"
+										},
+										{
+											"_type": "UMLParameter",
+											"_id": "AAAAAAFfoSci3cj5QBM=",
+											"_parent": {
+												"$ref": "AAAAAAFfoSbPTsjWfjA="
+											},
+											"visibility": "public",
+											"isStatic": false,
+											"isLeaf": false,
+											"type": "void",
+											"isReadOnly": false,
+											"isOrdered": false,
+											"isUnique": false,
+											"direction": "return"
+										}
+									],
+									"concurrency": "sequential",
+									"isQuery": false,
+									"isAbstract": false
+								}
+							],
+							"isAbstract": false,
+							"isFinalSpecialization": false,
+							"isLeaf": false,
+							"isActive": false
 						}
 					],
-					"isAbstract": false,
-					"isFinalSpecialization": false,
-					"isLeaf": false,
-					"isActive": false
+					"visibility": "public"
 				}
 			],
 			"visibility": "public"
