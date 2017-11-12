@@ -61,9 +61,11 @@ public class MerchDb implements Database {
      */
     public void removeMerchandise(Merchandise merch) {
         int id = merchants.indexOf(merch);
-        merchants.stream().filter(i -> i.getId() >= id)
-                .forEach(merchandise -> merchandise.setId(merchandise.getId() - 1));
-        merchants.remove(id);
+        if (id != -1) {
+            merchants.stream().filter(i -> i.getId() >= id)
+                    .forEach(merchandise -> merchandise.setId(merchandise.getId() - 1));
+            merchants.remove(id);
+        } else throw new MerchandiseNotFoundException(merch);
     }
 
     /**

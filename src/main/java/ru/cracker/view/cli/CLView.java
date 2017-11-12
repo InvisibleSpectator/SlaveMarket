@@ -49,7 +49,6 @@ public class CLView implements Observer, View {
      * Update information of Merchandise with id.
      *
      * @param id id of changed element
-     * @return
      */
     public void changed(int id) {
         System.out.println("changed " + id);

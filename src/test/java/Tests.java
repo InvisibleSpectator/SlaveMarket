@@ -1,9 +1,14 @@
 import org.junit.Assert;
 import org.junit.Test;
+import ru.cracker.Model.Model;
+import ru.cracker.Model.Observable;
+import ru.cracker.Model.SlaveMarketModel;
 import ru.cracker.Model.database.MerchDb;
 import ru.cracker.Model.merchandises.Slave;
+import ru.cracker.view.Observer;
 
 import java.util.ArrayList;
+
 
 public class Tests {
     MerchDb db = new MerchDb();
@@ -68,5 +73,39 @@ public class Tests {
         db.addMerchandise(slave);
         slaves.add(new Slave(1, 2, 3, "male", 3, "David", 320));
         Assert.assertEquals(slaves, db.searchMerchandise(""));
+    }
+
+    @Test
+    public void observerTests() {
+        System.out.println("\u001B[32mObserver mechanism\u001B[0m testBlock started{");
+        Model model = new SlaveMarketModel();
+        Observer observer = new Observer() {
+
+            int assertId = 1;
+
+            {
+                ((Observable) model).addObserver(this);
+            }
+
+            @Override
+            public void update() {
+                System.out.println("some data was updated");
+            }
+
+            @Override
+            public void deleted(int id) {
+                System.out.println("item with id=" + id + " was deleted");
+                Assert.assertEquals(assertId, id);
+            }
+
+            @Override
+            public void changed(int id) {
+                System.out.println("item with id=" + id + " was changed");
+                Assert.assertEquals(assertId, id);
+            }
+        };
+        slaves.forEach(model::addMerchandise);
+        model.removeMerchandise(1);
+        System.out.println("\u001B[32mObserver mechanism\u001B[0m testBlock passed successfully\n}");
     }
 }

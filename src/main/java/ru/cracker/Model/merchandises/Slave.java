@@ -242,8 +242,13 @@ public class Slave implements Merchandise {
      * Formatted like "ClassName Param1:Value1 Param2:Value2 ..."
      */
     public String getAllInfo() {
-        // TODO: 12.11.17 set Info
-        return "info ";
+        return "Slave id:" + id +
+                " height:" + height +
+                " weight:" + weight +
+                " age:" + age +
+                " gender:" + gender +
+                " name:" + name +
+                " benefit:" + benefit;
     }
 
     /**
@@ -263,7 +268,8 @@ public class Slave implements Merchandise {
                 " age:" + age +
                 " gender:" + gender +
                 " name:" + name +
-                " benefit:" + benefit;
+                " benefit:" + benefit +
+                " price:" + price;
     }
 
     @Override
