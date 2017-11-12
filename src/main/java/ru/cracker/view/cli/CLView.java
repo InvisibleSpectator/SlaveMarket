@@ -3,6 +3,7 @@ package ru.cracker.view.cli;
 import ru.cracker.Controller.Controller;
 import ru.cracker.Model.Model;
 import ru.cracker.Model.Observable;
+import ru.cracker.exceptions.MerchandiseNotFoundException;
 import ru.cracker.exceptions.WrongQueryException;
 import ru.cracker.view.Observer;
 import ru.cracker.view.View;
@@ -59,9 +60,16 @@ public class CLView implements Observer, View {
      */
     public void launch() {
         System.out.println("hello");
-        System.out.println(controller.getMerchantById(2));
-        controller.removeMerchant(2);
-        System.out.println(controller.getMerchantById(2));
+        try {
+            controller.removeMerchant(2);
+        } catch (MerchandiseNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            System.out.println(controller.getMerchantById(2));
+        } catch (MerchandiseNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
         try {
             System.out.println(controller.searchMerchant("gender=female and name=Julia and id>1000"));
         } catch (WrongQueryException e) {

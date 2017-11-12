@@ -30,7 +30,7 @@ public class MerchDb implements Database {
      */
     public MerchDb() {
         merchants = new ArrayList<Merchandise>();
-       // generateData(1300);
+//        generateData(1300);
     }
 
     private void generateData(int quantity) {
@@ -39,14 +39,13 @@ public class MerchDb implements Database {
                 merchants.add(new Slave(random.nextInt(40) + 160, random.nextInt(60) + 50, random
                         .nextInt(40) + 23, random
                         .nextBoolean() ? "male" : "female", i, random.nextBoolean() ? "Brian" : random
-                        .nextBoolean() ? "Julia" : random.nextBoolean() ? "Mark" : "Mary")));
+                        .nextBoolean() ? "Julia" : random.nextBoolean() ? "Mark" : "Mary", random.nextInt(600) + 200)));
     }
 
     /**
      * Puts merch into the vault
      *
      * @param merch Merch to put in vault
-     * @return void
      */
     public void addMerchandise(Merchandise merch) {
         if (merch.getId() == -1) {
@@ -59,7 +58,6 @@ public class MerchDb implements Database {
 
     /**
      * @param merch Removes merchandise from vault
-     * @return void
      */
     public void removeMerchandise(Merchandise merch) {
         int id = merchants.indexOf(merch);
@@ -71,10 +69,12 @@ public class MerchDb implements Database {
     /**
      * remove merchandise from vault by id
      *
-     * @param id
-     * @return
+     * @param id merchandise unique identification
      */
     public void removeMerchandise(int id) {
+        if (id >= merchants.size() || id < 0) {
+            throw new MerchandiseNotFoundException(id);
+        }
         merchants.remove(id);
         merchants.stream().filter(i -> i.getId() >= id)
                 .forEach(merchandise -> merchandise.setId(merchandise.getId() - 1));
@@ -169,6 +169,7 @@ public class MerchDb implements Database {
                         field.setAccessible(true);
                         try {
                             if (field.getName().toUpperCase().equals(key) &&
+                                    !merchandise.isBought() &&
                                     comparator1.apply(String.valueOf(field.get(merchandise)), value)) {
                                 return true;
                             }

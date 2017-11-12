@@ -2,6 +2,7 @@ package ru.cracker.Model;
 
 import ru.cracker.Model.merchandises.Merchandise;
 import ru.cracker.exceptions.MerchandiseNotFoundException;
+import ru.cracker.exceptions.WrongQueryException;
 
 import java.util.List;
 
@@ -42,7 +43,7 @@ public interface Model {
      * @param query query string
      * @return list of founed slaves
      */
-    public List<Merchandise> searchMerchandise(String query);
+    public List<Merchandise> searchMerchandise(String query) throws WrongQueryException;
 
     /**
      * Returns merchandise by id or exception

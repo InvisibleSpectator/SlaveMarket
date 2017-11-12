@@ -57,11 +57,6 @@ public class Slave implements Merchandise {
      */
     private int price;
 
-    /**
-     * Default constructor
-     */
-    public Slave() {
-    }
 
     /**
      * Initial constructor for Slave.
@@ -70,10 +65,11 @@ public class Slave implements Merchandise {
      * @param weight  weight of a new slave
      * @param age     age of a new slave
      * @param gender  Gender of a new slave.
-     * @param id
+     * @param id      slave's unique identification
      * @param benefit How effective he can work in percentage
+     * @param price   slave's cost
      */
-    public Slave(int height, int weight, int age, String gender, int id, Double benefit, String name) {
+    public Slave(int height, int weight, int age, String gender, int id, Double benefit, String name, int price) {
         this.age = age;
         this.height = height;
         this.weight = weight;
@@ -81,6 +77,7 @@ public class Slave implements Merchandise {
         this.id = id;
         this.name = name;
         this.benefit = benefit;
+        this.price = price;
     }
 
     /**
@@ -90,15 +87,16 @@ public class Slave implements Merchandise {
      * @param weight weight of a new slave
      * @param age    age of a new slave
      * @param gender Gender of a new slave.
-     * @param id
+     * @param id     slave's unique identification
      */
-    public Slave(int height, int weight, int age, String gender, int id, String name) {
+    public Slave(int height, int weight, int age, String gender, int id, String name, int price) {
         this.age = age;
         this.height = height;
         this.weight = weight;
         this.gender = gender;
         this.id = id;
         this.name = name;
+        this.price = price;
         calculateBenefit();
     }
 
@@ -110,14 +108,37 @@ public class Slave implements Merchandise {
      * @param age    age of a new slave
      * @param gender Gender of a new slave.
      */
-    public Slave(int height, int weight, int age, String gender, String name) {
+    public Slave(int height, int weight, int age, String gender, String name, int price) {
         this.age = age;
         this.height = height;
         this.weight = weight;
         this.gender = gender;
         this.id = -1;
         this.name = name;
+        this.price = price;
         calculateBenefit();
+    }
+
+
+    /**
+     * Initial constructor for Slave.
+     *
+     * @param height  height of a new slave
+     * @param weight  weight of a new slave
+     * @param age     age of a new slave
+     * @param gender  Gender of a new slave.
+     * @param benefit How effective he can work in percentage
+     * @param price   slave's cost
+     */
+    public Slave(int height, int weight, int age, String gender, Double benefit, String name, int price) {
+        this.age = age;
+        this.height = height;
+        this.weight = weight;
+        this.gender = gender;
+        this.price = price;
+        this.name = name;
+        this.benefit = benefit;
+        this.price = price;
     }
 
     /**
