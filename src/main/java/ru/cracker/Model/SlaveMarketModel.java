@@ -123,4 +123,16 @@ public class SlaveMarketModel implements Observable, Model {
         return database.getMerchantById(id);
     }
 
+    /**
+     * Marks merchandise as bought
+     *
+     * @param id unique merchandise identity
+     * @return bought merchandise
+     * @throws MerchandiseNotFoundException
+     */
+    @Override
+    public Merchandise buyMerchandise(int id) throws MerchandiseNotFoundException {
+        return database.buyMerchandise(id);
+    }
+
 }

@@ -51,4 +51,13 @@ public interface Controller {
      */
     public Merchandise getMerchantById(int id) throws MerchandiseNotFoundException;
 
+    /**
+     * Marks merchandise as bought
+     *
+     * @param id unique merchandise identity
+     * @return bought merchandise
+     * @throws MerchandiseNotFoundException
+     */
+    public Merchandise buyMerchandise(int id) throws MerchandiseNotFoundException;
+
 }

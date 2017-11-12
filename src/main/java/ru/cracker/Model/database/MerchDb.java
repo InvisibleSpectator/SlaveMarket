@@ -205,6 +205,16 @@ public class MerchDb implements Database {
                         }));
     }
 
+    @Override
+    public Merchandise buyMerchandise(int id) throws MerchandiseNotFoundException {
+        if (id >= merchants.size() || id < 0) {
+            throw new MerchandiseNotFoundException(id);
+        } else {
+            getMerchantById(id).buy();
+            return getMerchantById(id);
+        }
+    }
+
     @FunctionalInterface
     interface QueryComparator<A, B> {
         Boolean apply(A a, B b);

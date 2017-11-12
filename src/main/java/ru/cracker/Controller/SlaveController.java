@@ -85,4 +85,16 @@ public class SlaveController implements Controller {
         return model.getMerchantById(id);
     }
 
+    /**
+     * Marks merchandise as bought
+     *
+     * @param id unique merchandise identity
+     * @return bought merchandise
+     * @throws MerchandiseNotFoundException
+     */
+    @Override
+    public Merchandise buyMerchandise(int id) throws MerchandiseNotFoundException {
+        return model.buyMerchandise(id);
+    }
+
 }
