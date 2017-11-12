@@ -103,7 +103,7 @@ public class SlaveMarketModel implements Observable, Model {
 
     /**
      * Search slave by the string  query
-     * like "height>150 productivity>40 weight<90 age=22"
+     * like "height>=150 and productivity=40 and weight<90 and age=22"
      *
      * @param query query string
      * @return list of founed slaves

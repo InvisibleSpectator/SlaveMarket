@@ -70,8 +70,8 @@ public class Slave implements Merchandise {
      * @param weight  weight of a new slave
      * @param age     age of a new slave
      * @param gender  Gender of a new slave.
-     * @param id      How effective he can work in percentage
-     * @param benefit
+     * @param id
+     * @param benefit How effective he can work in percentage
      */
     public Slave(int height, int weight, int age, String gender, int id, Double benefit, String name) {
         this.age = age;
@@ -84,14 +84,13 @@ public class Slave implements Merchandise {
     }
 
     /**
-     * Constructor of a new Slave with autoclaculate productivity.
+     * Constructor of a new Slave with autocalculate productivity.
      *
      * @param height height of a new slave
      * @param weight weight of a new slave
      * @param age    age of a new slave
      * @param gender Gender of a new slave.
      * @param id
-     * @return void
      */
     public Slave(int height, int weight, int age, String gender, int id, String name) {
         this.age = age;
@@ -110,7 +109,6 @@ public class Slave implements Merchandise {
      * @param weight weight of a new slave
      * @param age    age of a new slave
      * @param gender Gender of a new slave.
-     * @return void
      */
     public Slave(int height, int weight, int age, String gender, String name) {
         this.age = age;
@@ -154,7 +152,7 @@ public class Slave implements Merchandise {
      * Calculates productivity with
      */
     private void calculateBenefit() {
-        // TODO do calcuations
+        // TODO need to do calcuations
 
     }
 

@@ -92,36 +92,62 @@ public class MerchDb implements Database {
         if (!querry.equals("")) {
             for (String subQuery : querry.split(" and ")) {
                 String[] reg;
-                reg = subQuery.split("=");
+                reg = subQuery.split(">=");
                 String value;
                 String which;
                 if (reg.length == 1) {
-                    reg = subQuery.split(">");
+                    reg = subQuery.split("<=");
                     if (reg.length == 1) {
-                        reg = subQuery.split("<");
-                        try {
-                            Double.parseDouble(reg[1]);
-                            which = "<";
-                        } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
-                            throw new WrongQueryException(subQuery);
+                        reg = subQuery.split("=");
+                        if (reg.length == 1) {
+                            reg = subQuery.split(">");
+                            if (reg.length == 1) {
+                                reg = subQuery.split("<");
+                                try {
+                                    Double.parseDouble(reg[1]);
+                                    which = "<";
+                                } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+                                    throw new WrongQueryException(subQuery);
+                                }
+                            } else {
+                                try {
+                                    Double.parseDouble(reg[1]);
+                                    which = ">";
+                                } catch (NumberFormatException e) {
+                                    throw new WrongQueryException(subQuery);
+                                }
+                            }
+                        } else {
+                            reg = subQuery.split("=");
+                            if (reg.length == 1) {
+                                which = "?";
+                            } else {
+                                which = "=";
+                            }
                         }
                     } else {
                         try {
                             Double.parseDouble(reg[1]);
-                            which = ">";
-                        } catch (NumberFormatException e) {
+                            which = "<=";
+                        } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
                             throw new WrongQueryException(subQuery);
                         }
                     }
                 } else {
-                    reg = subQuery.split("=");
-                    if (reg.length == 1) {
-                        which = "?";
-                    } else {
-                        which = "=";
+                    try {
+                        Double.parseDouble(reg[1]);
+                        which = ">=";
+                    } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+                        throw new WrongQueryException(subQuery);
                     }
                 }
                 switch (which) {
+                    case "<=":
+                        comparator = (a, b) -> Double.parseDouble(a) <= Double.parseDouble(b);
+                        break;
+                    case ">=":
+                        comparator = (a, b) -> Double.parseDouble(a) >= Double.parseDouble(b);
+                        break;
                     case "<":
                         comparator = (a, b) -> Double.parseDouble(a) < Double.parseDouble(b);
                         break;

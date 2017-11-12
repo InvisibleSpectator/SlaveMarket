@@ -25,6 +25,13 @@ public class Tests {
     }
 
     @Test
+    public void searchMerchandiseEuqalsAndGreaterTest() {
+        slaves.remove(1);
+        slaves.remove(1);
+        Assert.assertEquals(slaves, db.searchMerchandise("id<=0"));
+    }
+
+    @Test
     public void removeMerchandiseTest() {
         db.removeMerchandise(new Slave(174, 44, 16, "female", 1, "Diana"));
         slaves.remove(1);
@@ -59,7 +66,7 @@ public class Tests {
     public void addSlaveTest() {
         Slave slave = new Slave(1, 2, 3, "male", "David");
         db.addMerchandise(slave);
-        slaves.add(new Slave(1, 2, 3, "male", 3,"David"));
+        slaves.add(new Slave(1, 2, 3, "male", 3, "David"));
         Assert.assertEquals(slaves, db.searchMerchandise(""));
     }
 }
