@@ -63,8 +63,8 @@ public class CLView implements Observer, View {
         controller.removeMerchant(2);
         System.out.println(controller.getMerchantById(2));
         try {
-            System.out.println(controller.searchMerchant("gender=female and name=Julia and id>2280"));
-        }catch (WrongQueryException e){
+            System.out.println(controller.searchMerchant("gender=female and name=Julia and id>1000"));
+        } catch (WrongQueryException e) {
             System.out.println(e.getMessage());
         }
     }
