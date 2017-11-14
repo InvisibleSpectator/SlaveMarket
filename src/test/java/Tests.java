@@ -8,6 +8,8 @@ import ru.cracker.Model.merchandises.Slave;
 import ru.cracker.view.Observer;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.regex.Pattern;
 
 
 public class Tests {
@@ -106,6 +108,23 @@ public class Tests {
         };
         slaves.forEach(model::addMerchandise);
         model.removeMerchandise(1);
-        System.out.println("\u001B[32mObserver mechanism\u001B[0m testBlock passed successfully\n}");
+        System.out.println("\u001B[32m}\u001B[0m");
+    }
+
+    @Test
+    public void queryTest() {
+        System.out.println("\u001B[32mQuery test\u001B[0m testBlock started{");
+        System.out.println(db.searchMerchandise("id>=0 and id!=1"));
+//        String query = "id<=213";
+        Pattern pattern = Pattern.compile("(\\bnot \\b)?[b]*");
+//        Pattern querySplitter = Pattern.compile("([a-zA-z]+[[0-9]*[a-zA-z]]*)(=)([\\w]+[.\\w]*)");
+//        Matcher matcher = pattern.matcher(query);
+//        System.out.println(matcher.lookingAt());
+//        System.out.println(matcher.groupCount());
+////        System.out.println(matcher.group(2).toUpperCase());
+////        System.out.println(matcher.group(3).toUpperCase());
+        System.out.println("\u001B[32m}\u001B[0m");
+
+
     }
 }
